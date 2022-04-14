@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- K线样式 -->
+    <style>
+        .time {
+            width: 100%;
+        }
+
+        .time span {
+            display: inline-block;
+            padding: 10px;
+            cursor: pointer;
+            color: rgb(255,255,255,.5);
+            -webkit-user-select: none;
+        }
+
+        .active {
+            color: rgb(255,255,255,.8) !important;
+            background-color: rgb(17, 29, 66);border-radius: 4px 4px 0 0;
+        }
+
+        html,
+        body {
+            height: 97%;
+        }
+
+        #tv_chart_container {
+            height: 100%;
+        }
+
+        #tv_chart_container iframe {
+            height: 94% !important;
+        }
+    </style>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+    <div class="time" id="time">
+        <span>Time</span>
+       <!-- <span>1min</span> -->
+        <span class="active">5min</span>
+       <!-- <span>15min</span> -->
+       <!-- <span>30min</span> -->
+         <span>1hour</span> 
+        <span>4hour</span>
+        <span>1day</span>
+      <!-- <span>1week</span>
+        <span>1mon</span> -->
+    </div>
+    <!-- K线0526 -->
+    <div id="tv_chart_container" :height="kline_data.height+'px'"></div>
+</body>
+<!-- JS API -->
+<script type="text/javascript" src="static/charting_library/charting_library.min.js"></script>
+<script type="text/javascript" src="socket.js"></script>
+<script type="text/javascript" src="overrides.js"></script>
+<script type="text/javascript" src="dataUpdater.js"></script>
+<script type="text/javascript" src="datafees.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/bignumber.js@9.0.2/bignumber.min.js'></script>
+<script type="text/javascript" src="index.js"></script>
+<!-- K线脚本 -->
+
+<script>
+    let jsApi = null;
+    window.onload = function () {
+        var url = decodeURI(location.search)
+		var symbol = getUrlParam("c") ;
+	 
+        jsApi = new TVjsApi(symbol);
+        jsApi.changeSkin('black')
+        let lang = 'en'
+        //let type = url.slice(6, url.length) || 'BTCUSDT'
+        jsApi.handleSymbol(symbol)
+        // let src = window.parent.document.getElementById('dropdownMenu2').getElementsByTagName('img')[0].getAttribute('src')
+        // lang = src.slice(src.length-6, src.length-4)
+        switch (lang) {
+            case 'zh':
+                jsApi.handleLang('zh_TW');
+                break;
+            case 'jp':
+                jsApi.handleLang('ja');
+                break;
+            case 'ko':
+                jsApi.handleLang('ko');
+                break;
+            case 'en':
+                jsApi.handleLang('en');
+                break;
+        }
+        jsApi.init();
+    }
+	function getUrlParam(name){
+	 var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	 
+	 var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	 
+	 if (r!=null) return unescape(r[2]); return null; //返回参数值
+ }
+ 
+    // 点击时间切换K线
+    let span = $("#time span");
+    for (let i = 0; i < span.length; i++) {
+        $.each(span, function (index, item) {
+            $(item).on('click', function () {
+                $(item).addClass('active').siblings().removeClass('active')
+                if (index == 0) {
+                    jsApi.widgets.chart().setChartType(3)
+                    jsApi.studies.forEach(item => {
+                        item.then(id => jsApi.widgets.activeChart().getStudyById(id).setVisible(
+                            false)) //true
+                    })
+                }
+                if (index == 1) {
+                    jsApi.widgets.chart().setChartType(1)
+                    jsApi.widgets.activeChart().setResolution('5')
+                    jsApi.studies.forEach(item => {
+                        item.then(id => jsApi.widgets.activeChart().getStudyById(id).setVisible(
+                            true)) //true
+                    })
+                }
+                if (index == 2) {
+                    jsApi.widgets.chart().setChartType(1)
+                    jsApi.widgets.activeChart().setResolution('60')
+                    jsApi.studies.forEach(item => {
+                        item.then(id => jsApi.widgets.activeChart().getStudyById(id).setVisible(
+                            true)) //true
+                    })
+                }
+                if (index == 3) {
+                    jsApi.widgets.chart().setChartType(1)
+                    jsApi.widgets.activeChart().setResolution('240')
+                    jsApi.studies.forEach(item => {
+                        item.then(id => jsApi.widgets.activeChart().getStudyById(id).setVisible(
+                            true)) //true
+                    })
+                }
+                if (index == 4) {
+                    jsApi.widgets.chart().setChartType(1)
+                    jsApi.widgets.activeChart().setResolution('1D')
+                    jsApi.studies.forEach(item => {
+                        item.then(id => jsApi.widgets.activeChart().getStudyById(id).setVisible(
+                            true)) //true
+                    })
+                }
+                // if (index == 5) {
+                //     jsApi.widgets.chart().setChartType(1)
+                //     jsApi.widgets.activeChart().setResolution('60')
+                //     jsApi.studies.forEach(item => {
+                //         item.then(id => jsApi.widgets.activeChart().getStudyById(id).setVisible(
+                //             true)) //true
+                //     })
+                // }
+                // if (index == 6) {
+                //     jsApi.widgets.chart().setChartType(1)
+                //     jsApi.widgets.activeChart().setResolution('240')
+                // }
+                // if (index == 6) {
+                //     jsApi.widgets.chart().setChartType(1)
+                //     jsApi.widgets.activeChart().setResolution('240')
+                //     jsApi.studies.forEach(item => {
+                //         item.then(id => jsApi.widgets.activeChart().getStudyById(id).setVisible(
+                //             true)) //true
+                //     })
+                // }
+                // if (index == 7) {
+                //     jsApi.widgets.chart().setChartType(1)
+                //     jsApi.widgets.activeChart().setResolution('1D')
+                //     jsApi.studies.forEach(item => {
+                //         item.then(id => jsApi.widgets.activeChart().getStudyById(id).setVisible(
+                //             true)) //true
+                //     })
+                // }
+     //            if (index == 8) {
+     //                jsApi.widgets.chart().setChartType(1)
+     //                jsApi.widgets.activeChart().setResolution('1W')
+     //                jsApi.studies.forEach(item => {
+     //                    item.then(id => jsApi.widgets.activeChart().getStudyById(id).setVisible(
+     //                        true)) //true
+     //                })
+     //            }
+     //            if (index == 9) {
+					// alert(9);
+     //                jsApi.widgets.chart().setChartType(1)
+     //                jsApi.widgets.activeChart().setResolution('1M')
+     //                jsApi.studies.forEach(item => {
+     //                    item.then(id => jsApi.widgets.activeChart().getStudyById(id).setVisible(
+     //                        true)) //true
+     //                })
+     //            }
+                // if (index == 9) {
+                //     jsApi.widgets.chart().setChartType(1)
+                //     jsApi.widgets.activeChart().setResolution('1W')
+                // }
+            })
+        })
+    }
+</script>
+
+</html>

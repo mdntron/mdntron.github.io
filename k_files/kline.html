@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://www.originautoparts.com/huobi/k_line/kline.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!-- K线样式 -->
+<style>
+.time { width: 100%; }
+.time span { display: inline-block; padding: 10px; cursor: pointer; color: #fff; -webkit-user-select: none; }
+.active { color: #007FB9 !important; border-bottom: 4px #007FB9 solid; font-weight: bold; }
+html,  body { height: 97%; }
+#tv_chart_container { height: 100%; }
+#tv_chart_container iframe { height: 94% !important; }
+</style>
+<script src="./jquery-3.2.1.min.js.下载"></script>
+</head>
+
+<body>
+<div class="time" id="time"> <span>Time</span> <span>1min</span> <span class="active">5min</span> <span>15min</span> <span>30min</span> <span>1hour</span> <span>4hour</span> <span>1day</span> <span>1week</span> <span>1mon</span> </div>
+<!-- K线0526 -->
+<div id="tv_chart_container" :height="kline_data.height+&#39;px&#39;"><iframe id="tradingview_548eb" name="tradingview_548eb" src="./zh_TW-tv-chart.37fbf462d076e305ceee.html" frameborder="0" allowtransparency="true" scrolling="no" allowfullscreen="" style="display: block; width: 100%; height: 100%;"></iframe></div>
+
+<!-- JS API -->
+<script type="text/javascript" src="./charting_library.min.js.下载"></script>
+<script type="text/javascript" src="./socket.js.下载"></script>
+<script type="text/javascript" src="./overrides.js.下载"></script>
+<script type="text/javascript" src="./dataUpdater.js.下载"></script>
+<script type="text/javascript" src="./datafees.js.下载"></script>
+<script type="text/javascript" src="./index.js.下载"></script>
+<!-- K线脚本 -->
+
+<script>
+    let jsApi = null;
+    window.onload = function () {
+        var url = decodeURI(location.search)
+        jsApi = new TVjsApi("NSC/USDT");
+        jsApi.changeSkin('black')
+        let lang = 'en'
+        let type = url.slice(6, url.length) || 'BTC/USDT'
+        jsApi.handleSymbol(type)
+        let src = window.parent.document.getElementById('dropdownMenu2').getElementsByTagName('img')[0].getAttribute('src')
+        lang = src.slice(src.length-6, src.length-4)
+        switch (lang) {
+            case 'zh':
+                jsApi.handleLang('zh_TW');
+                break;
+            case 'jp':
+                jsApi.handleLang('ja');
+                break;
+            case 'ko':
+                jsApi.handleLang('ko');
+                break;
+            case 'en':
+                jsApi.handleLang('en');
+                break;
+        }
+        jsApi.init();
+    }
+
+    // 点击时间切换K线
+    let span = $(".time span")
+    for (let i = 0; i < span.length; i++) {
+        $.each(span, function (index, item) {
+            $(item).on('click', function () {
+                $(item).addClass('active').siblings().removeClass('active')
+                if (index == 0) {
+                    jsApi.widgets.chart().setChartType(3)
+                    jsApi.studies.forEach(item => {
+                        item.then(id => jsApi.widgets.activeChart().getStudyById(id).setVisible(
+                            false)) //true
+                    })
+                }
+                if (index == 1) {
+                    jsApi.widgets.chart().setChartType(1)
+                    jsApi.widgets.activeChart().setResolution('1')
+                    jsApi.studies.forEach(item => {
+                        item.then(id => jsApi.widgets.activeChart().getStudyById(id).setVisible(
+                            true)) //true
+                    })
+                }
+                if (index == 2) {
+                    jsApi.widgets.chart().setChartType(1)
+                    jsApi.widgets.activeChart().setResolution('5')
+                    jsApi.studies.forEach(item => {
+                        item.then(id => jsApi.widgets.activeChart().getStudyById(id).setVisible(
+                            true)) //true
+                    })
+                }
+                if (index == 3) {
+                    jsApi.widgets.chart().setChartType(1)
+                    jsApi.widgets.activeChart().setResolution('15')
+                    jsApi.studies.forEach(item => {
+                        item.then(id => jsApi.widgets.activeChart().getStudyById(id).setVisible(
+                            true)) //true
+                    })
+                }
+                if (index == 4) {
+                    jsApi.widgets.chart().setChartType(1)
+                    jsApi.widgets.activeChart().setResolution('30')
+                    jsApi.studies.forEach(item => {
+                        item.then(id => jsApi.widgets.activeChart().getStudyById(id).setVisible(
+                            true)) //true
+                    })
+                }
+                if (index == 5) {
+                    jsApi.widgets.chart().setChartType(1)
+                    jsApi.widgets.activeChart().setResolution('60')
+                    jsApi.studies.forEach(item => {
+                        item.then(id => jsApi.widgets.activeChart().getStudyById(id).setVisible(
+                            true)) //true
+                    })
+                }
+                // if (index == 6) {
+                //     jsApi.widgets.chart().setChartType(1)
+                //     jsApi.widgets.activeChart().setResolution('240')
+                // }
+                if (index == 6) {
+                    jsApi.widgets.chart().setChartType(1)
+                    jsApi.widgets.activeChart().setResolution('240')
+                    jsApi.studies.forEach(item => {
+                        item.then(id => jsApi.widgets.activeChart().getStudyById(id).setVisible(
+                            true)) //true
+                    })
+                }
+                if (index == 7) {
+                    jsApi.widgets.chart().setChartType(1)
+                    jsApi.widgets.activeChart().setResolution('1D')
+                    jsApi.studies.forEach(item => {
+                        item.then(id => jsApi.widgets.activeChart().getStudyById(id).setVisible(
+                            true)) //true
+                    })
+                }
+                if (index == 8) {
+                    jsApi.widgets.chart().setChartType(1)
+                    jsApi.widgets.activeChart().setResolution('1W')
+                    jsApi.studies.forEach(item => {
+                        item.then(id => jsApi.widgets.activeChart().getStudyById(id).setVisible(
+                            true)) //true
+                    })
+                }
+                if (index == 9) {
+                    jsApi.widgets.chart().setChartType(1)
+                    jsApi.widgets.activeChart().setResolution('1M')
+                    jsApi.studies.forEach(item => {
+                        item.then(id => jsApi.widgets.activeChart().getStudyById(id).setVisible(
+                            true)) //true
+                    })
+                }
+                // if (index == 9) {
+                //     jsApi.widgets.chart().setChartType(1)
+                //     jsApi.widgets.activeChart().setResolution('1W')
+                // }
+            })
+        })
+    }
+</script>
+</body></html>

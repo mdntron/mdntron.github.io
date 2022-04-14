@@ -1,0 +1,3733 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- <base href="https://exchange.gd-juzheng.com/" /> -->
+
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <meta http-equiv="content-type" content="no-cache, must-revalidate" />
+
+    <meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT" />
+
+
+
+
+
+    <title>Hoidex </title>
+
+    <link rel="stylesheet" href="https://exchange.gd-juzheng.com/static/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://exchange.gd-juzheng.com/static/css/head.css?c=1">
+
+    <link rel="stylesheet" href="https://exchange.gd-juzheng.com/static/css/foot.css?c=2">
+
+    <link rel="stylesheet" href="https://exchange.gd-juzheng.com/static/css/base.css?c=1">
+
+    <link rel="icon" href="https://exchange.gd-juzheng.com/static/img/favicon.png">
+
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1870724_wf7t9qwe9tl.css">
+
+    <!-- 0617新增 -->
+    <style>
+        .newAdd-col-xs-7 {
+            width: 65% !important;
+        }
+        .newAdd-right-reset {
+            margin-top: 0 !important;
+            margin-left: 10px !important;
+            min-height: 582px !important;
+        }
+        .newAdd-body-right-bottom {
+            height: 511px !important;
+        }
+        .newAdd-padding {
+            padding: 24px !important;
+            min-height: 99px;
+        }
+        .newAdd-height {
+            height: 651px !important
+        }
+        .newAdd-right-width {
+            width: 34% !important;
+        }
+        .newAdd-bottom-width {
+            width: 63.6667% !important;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        .newAdd-bottom-minheight {
+            min-height: 327px;
+        }
+        .newAdd-body-right-show-list {
+            height: 230px !important;
+        }
+        .new-head-bg {
+            background: #131625 !important;
+        }
+        .new-body-bg {
+            background: #252A44 !important;
+        }
+        .new-app {
+            margin-top: 10px !important;
+        }
+        .new-right-max-height {
+            max-height: 50px;
+        }
+        .new-right-height {
+            max-height: 581px !important;
+            overflow: hidden;
+        }
+        .old-right-height {
+            max-height: 531px !important;
+            overflow: hidden;
+        }
+        .new-add-border {
+            border: 1px solid rgb(43, 53, 85);
+        }
+    </style>
+    <script src="https://exchange.gd-juzheng.com/static/js/jquery-3.2.1.min.js"></script>
+
+    <script src="https://exchange.gd-juzheng.com/static/js/bootstrap.min.js"></script>
+
+    <script src="https://exchange.gd-juzheng.com/static/js/layer/layer.js"></script>
+
+    <script src="https://exchange.gd-juzheng.com/static/js/vue.js"></script>
+
+    <script>
+        function clog(data) {
+
+            // console.log(data);
+
+        }
+    </script>
+
+</head>
+
+
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row  new-body-bg">
+
+            <div class="col-xs-12 header new-head-bg">
+
+                <div class="col-xs-1 logo">
+
+                    <a href=""><img
+                            src="https://exchange.gd-juzheng.com/uploads/20200405/deb2378b88913caed80bde3ba8e6da42.png"
+                            alt=""></a>
+
+                </div>
+
+                <div class="col-xs-8 tab-left">
+
+                    <div class="menu">
+
+                        <a href="/">
+
+                            Home
+
+                        </a> </div>
+
+                    <div class="menu">
+
+                        <a href="/ctc">
+
+                            C2C
+
+                        </a> </div>
+
+                    <div class="menu">
+
+                        <a href="/new">
+
+                            NEW
+
+                        </a> </div>
+
+                    <div class="menu">
+
+                        <a href="/apply">
+
+                            Issue new currency
+
+                        </a> </div>
+
+                </div>
+
+                <div class="col-xs-3 tab-right">
+
+
+
+                    <div class="col-xs-7 tab-right-left not-lgin">
+
+                        <button class="active" onclick="window.location.href='/login'">Login</button>
+
+                        <button onclick="window.location.href='/register'">Signup</button>
+
+                    </div>
+
+
+
+                    <div class="col-xs-5 tab-right-right">
+
+                        <div class="col-xs-4 dropdown">
+
+                            <a class="dropdown-toggle" href="javascript:;" id="dropdownMenu1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+
+                                <img src="https://exchange.gd-juzheng.com/static/img/notice@2x.png"
+                                    alt="Announcement center">
+
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+
+                                <li>Announcement center</li>
+
+                                <li><a href="https://exchange.gd-juzheng.com/article/9">Platform upgrade</a></li>
+
+                                <li><a href="https://exchange.gd-juzheng.com/article/1">Wallet Upgrade Complete</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="col-xs-1">
+
+                        </div>
+
+                        <!-- 选择语言 -->
+                        <div class="col-xs-4">
+
+                            <a class="dropdown-toggle" href="javascript:;" id="dropdownMenu2" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+
+                                <img src="https://exchange.gd-juzheng.com/static/img/en.png">
+
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-right" id="lang" aria-labelledby="dropdownMenu2">
+
+
+
+                                <li><a href="https://exchange.gd-juzheng.com?lang=en"><img
+                                            src="https://exchange.gd-juzheng.com/static/img/en.png" alt="">English</a>
+
+                                </li>
+
+                                <li><a href="https://exchange.gd-juzheng.com?lang=ko"><img
+                                            src="https://exchange.gd-juzheng.com/static/img/ko.png" alt="">한국어</a></li>
+
+                                <li><a href="https://exchange.gd-juzheng.com?lang=jp"><img
+                                            src="https://exchange.gd-juzheng.com/static/img/jp.png" alt="">日本语</a></li>
+
+                                <li><a href="https://exchange.gd-juzheng.com?lang=tw"><img
+                                            src="https://exchange.gd-juzheng.com/static/img/tw.png" alt="">繁体中文</a></li>
+
+
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <link rel="stylesheet" href="https://exchange.gd-juzheng.com/static/css/bb-deal.css?C=8">
+
+            <div id="app" v-cloak @click.stop="market_desc_show = false">
+
+                <div class="col-xs-12 body new-app">
+
+                    <!-- 左边的市场列表 -->
+                    <div class="col-xs-2 body-left new-head-bg" v-if="!vifstyle">
+
+                        <div class="col-xs-12 body-left-top">
+
+                            <div @click="market_param.symbol = 'SELF'"
+                                :class="market_param.symbol == 'SELF' ? 'col-xs-4 active' : 'col-xs-4'"
+                                style="display: none">
+
+                                <p>
+
+                                    <span>Optional</span>
+
+                                </p>
+
+                            </div>
+
+                            <div @click="changeSymbol('USDT')"
+                                :class="market_param.symbol == 'USDT' ? 'col-xs-4 active' : 'col-xs-4'">
+
+                                <p>
+
+                                    <span>USDT</span>
+
+                                </p>
+
+                            </div>
+
+                            <div @click="changeSymbol('BTC')"
+                                :class="market_param.symbol == 'BTC' ? 'col-xs-4 active' : 'col-xs-4'">
+
+                                <p>
+
+                                    <span>BTC</span>
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 body-left-search">
+
+                            <p>
+
+                                <input type="text" class="new-add-border new-head-bg" v-model="market_param.market">
+
+                                <button><img src="https://exchange.gd-juzheng.com/static/img/search@2x.png"
+                                        alt=""></button>
+
+                            </p>
+
+                        </div>
+
+                        <div class="col-xs-12 body-left-tab">
+
+                            <div class="col-xs-4" @click="editSort('id')">
+
+                                <p>
+
+                                    <span>Coin</span><img
+                                        src="https://exchange.gd-juzheng.com/static/img/reorder@2x.png" alt="">
+
+                                </p>
+
+                            </div>
+
+                            <div class="col-xs-4" @click="editSort('close')">
+
+                                <p>
+
+                                    <span> price</span><img
+                                        src="https://exchange.gd-juzheng.com/static/img/reorder@2x.png" alt="">
+
+                                </p>
+
+                            </div>
+
+                            <div class="col-xs-4" @click="editSort('changepercent')">
+
+                                <p>
+
+                                    <span> Change</span><img
+                                        src="https://exchange.gd-juzheng.com/static/img/reorder@2x.png" alt="">
+
+                                </p>
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                        <div class="col-xs-12 body-left-infos tab_info">
+
+                            <div v-if="!is_show_wss" style="text-align: center;margin-top: 50%;">
+
+                                <img style="width: 30px;height: 30px;"
+                                    src="https://exchange.gd-juzheng.com/static/js/layer/theme/default/loading-1.gif"
+                                    alt="">
+
+                            </div>
+
+                            <div style="border-bottom: none;" v-if="is_show_wss" v-for="(item,index) in marketList"
+                                @click="changeMarket(item)"
+                                :class="this_market == item.market ? 'col-xs-12 body-left-info active' : 'col-xs-12 body-left-info'">
+
+                                <div class="col-xs-12 body-left-info_top" style="display: none">
+
+                                    <div class="col-xs-2">
+
+                                    </div>
+
+                                    <div class="col-xs-5 body-left-info_top_left">
+
+                                        <span>{{item.market}}</span>
+
+                                    </div>
+
+                                    <div
+                                        :class="item.changepercent >= 0 ? 'col-xs-5 body-left-info_top_right rise' : 'col-xs-5 body-left-info_top_right fall'">
+
+                                        <span>{{item.changepercent}}%</span>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-xs-12 body-left-info_body" style="display: none">
+
+                                    <div class="col-xs-2 body-left-info_body_left">
+
+                                        <img src="https://exchange.gd-juzheng.com/static/img/collectio_select@2x.png"
+                                            alt="">
+
+                                    </div>
+
+                                    <div class="col-xs-10 body-left-info_body_right">
+
+                                        <span>{{item.market}}/{{item.symbol}}</span>
+
+                                        <p>
+
+                                            {{item.close}}≈{{item.mark}}{{item.rate}}
+
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-xs-4">
+
+                                    <div class="col-xs-2 body-left-info_body_left">
+
+                                        <img src="https://exchange.gd-juzheng.com/static/img/collectio_select@2x.png"
+                                            alt="">
+
+                                    </div>
+
+                                    <div class="col-xs-10 body-left-info_body_right">
+
+                                        <span style="color: white">{{item.market}}</span>
+
+                                        <p style="display: none">
+
+                                            {{item.close}}≈{{item.mark}}{{item.rate}}
+
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-xs-4" style="color: white; text-align: center;">
+
+                                    {{item.close}}
+
+                                </div>
+
+                                <div class="col-xs-4 body-left-info_top">
+
+                                    <div :class="item.changepercent >= 0 ? 'col-xs-12 body-left-info_top_right rise' : 'col-xs-12 body-left-info_top_right fall'"
+                                        style="padding-right: 5px; text-align: center;">
+
+                                        <span>{{item.changepercent}}%</span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-7 body-center newAdd-col-xs-7"  v-if="vifstyle">
+
+                        <div class="col-xs-12 body-center-top  newAdd-padding new-head-bg">
+                            <div class="col-xs-12 body-center-top_left">
+
+                                <div class="top_float body-center-top_left_left">
+
+                                    <p class="market_title" @click="handleClick">
+
+                                        <b>{{marketInfo.market}}</b>/{{marketInfo.symbol}}
+
+                                    </p>
+
+                                    <span> Total:{{marketInfo.vol}}{{marketInfo.market}}</span>
+
+
+
+                                    <div class="body-center-top_alert " style="display: none">
+
+
+
+                                        <div class="col-xs-12 body-center-top_alert_bottom">
+
+
+
+                                            <div class="col-xs-12 body-center-top_alert_bottom_body">
+
+                                                <div class="desc_heght desc_info" v-html="marketInfo.market_desc">
+
+                                                </div>
+
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="top_float body-center-top_left_right">
+
+                                    <span> price</span>
+
+                                    <p>
+
+                                        {{marketInfo.close}}≈{{marketInfo.mark}}{{marketInfo.rate}}
+
+                                    </p>
+
+                                </div>
+
+                                <div class="top_float">
+
+                                    <span>24HRise and fall</span>
+
+                                    <p v-if="marketInfo.changepercent"
+                                        :class="marketInfo.changepercent >= 0 ? 'rise' : 'fall'">
+
+                                        {{marketInfo.changepercent}}%
+
+                                    </p>
+
+                                </div>
+
+                                <div class="top_float">
+
+                                    <span>24H High</span>
+
+                                    <p>
+
+                                        {{marketInfo.high}}
+
+                                    </p>
+
+                                </div>
+
+                                <div class="top_float">
+
+                                    <span>24H Low</span>
+
+                                    <p>
+
+                                        {{marketInfo.low}}
+
+                                    </p>
+
+                                </div>
+
+                                <div class="top_float">
+
+                                    <span>24H Vol</span>
+
+                                    <p>
+
+                                        {{marketInfo.amount}}
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        <!-- K线 -->
+                        <div :class="is_big_kline ? 'col-xs-12 body-center-body big_kline' : 'col-xs-12 body-center-body'" class="new-head-bg" id="iframe_area">
+
+                            <span @click="big_kline()" class="big_span"><i class="iconfont icon-quanping"
+                                    style="font-size: 26px;"></i></span>
+
+                            <!-- K线0527 -->
+
+                            <iframe src="kline.html" id="iframe" frameborder="0" width="100%" height="100%"
+                                scrolling="no"></iframe>
+
+                            <!-- <span @click="big_kline()" class="big_span"></span>
+
+                            <iframe id="iframe" :src="kline_src" :width="kline_data.width+'px'"
+
+                                :height="kline_data.height+'px'" frameborder="no" border="0" marginwidth="0"
+
+                                marginheight="0" scrolling="no" allowtransparency="yes"></iframe> -->
+
+
+
+                        </div>
+
+                        <div class="col-xs-12 body-center-bottom" v-if="!vifstyle">
+
+                            <div class="col-xs-12 body-center-bottom-top">
+
+                                <div @click="deal_type = 1"
+                                    :class="deal_type == 1 ? 'dell_type_add active' : 'dell_type_add'">
+
+                                    <p>
+
+                                        LIMIT ORDER </p>
+
+                                </div>
+
+                                <div @click="deal_type = 2"
+                                    :class="deal_type == 2 ? 'dell_type_add active' : 'dell_type_add'">
+
+                                    <p>
+
+                                        MARKET ORDER </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-xs-12 body-center-bottom-body">
+
+                                <div class="col-xs-6">
+
+                                    <div class="col-xs-4 body-center-bottom-body_top_left">
+
+                                        <p>
+
+                                            Buy {{marketInfo.market}}
+
+                                        </p>
+
+                                    </div>
+
+                                    <div class="col-xs-8 body-center-bottom-body_top_right">
+
+                                        <p onclick="location.href='/legal'">
+
+                                            <span>To recharge</span><b
+                                                v-if="userMoneys[this_symbol]">{{userMoneys[this_symbol]['account']}}
+
+                                                {{this_symbol}}</b>
+
+                                        </p>
+
+                                    </div>
+
+
+
+                                    <div class="col-xs-12 body-center-bottom-body_list" v-if="deal_type == 1">
+
+                                        <div class="col-xs-6 body-center-bottom-body_list_left">
+
+                                            Buying price <a @click="buy_price = marketInfo.close"
+                                                href="javascript:;">Latest price</a>
+
+                                        </div>
+
+                                        <div class="col-xs-6 body-center-bottom-body_list_right">
+
+                                            {{this_symbol}}
+
+                                        </div>
+
+                                        <div class="col-xs-12 body-center-bottom-body_list_body">
+
+                                            <p>
+
+                                                <input type="number" class="ccinput" v-model="buy_price">
+
+                                            </p>
+
+                                        </div>
+
+                                        <div class="col-xs-12 body-center-bottom-body_list_bottom">
+
+                                            <p>
+
+                                                ≈{{marketInfo.mark}} {{buy_price*rate[this_symbol]}}
+
+
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-xs-12 body-center-bottom-body_list" v-else>
+
+                                        <div class="col-xs-12 body-center-bottom-body_list_left">
+
+                                            Buy at the best price in the market </div>
+
+                                    </div>
+
+
+
+                                    <div class="col-xs-12 body-center-bottom-body_list">
+
+                                        <div class="col-xs-6 body-center-bottom-body_list_left">
+
+                                            Amount </div>
+
+                                        <div class="col-xs-6 body-center-bottom-body_list_right">
+
+                                            {{marketInfo.market}}
+
+                                        </div>
+
+                                        <div class="col-xs-12 body-center-bottom-body_list_body">
+
+                                            <p>
+
+                                                <input type="number" class="ccinput" v-model="buy_amount">
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="col-xs-12 body-center-bottom-body_button">
+
+                                        <p v-if="deal_type == 1">
+
+                                            <span>Transaction amount</span>{{buy_amount*buy_price}} {{this_symbol}} ≈
+
+                                            {{marketInfo.mark}} {{buy_amount*buy_price*rate[this_symbol]}}
+
+                                        </p>
+
+                                        <button class="lv" onclick="location.href='/login'">Login Or Register and trade
+
+                                            now</button>
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-xs-6">
+
+                                    <div class="col-xs-4 body-center-bottom-body_top_left">
+
+                                        <p>
+
+                                            Sell {{marketInfo.market}}
+
+                                        </p>
+
+                                    </div>
+
+                                    <div class="col-xs-12 body-center-bottom-body_list" v-if="deal_type == 1">
+
+                                        <div class="col-xs-6 body-center-bottom-body_list_left">
+
+                                            Selling price <a @click="sell_price = marketInfo.close"
+                                                href="javascript:;">Latest price</a>
+
+                                        </div>
+
+                                        <div class="col-xs-6 body-center-bottom-body_list_right">
+
+                                            {{this_symbol}}
+
+                                        </div>
+
+                                        <div class="col-xs-12 body-center-bottom-body_list_body">
+
+                                            <p>
+
+                                                <input type="number" class="ccinput" v-model="sell_price">
+
+                                            </p>
+
+                                        </div>
+
+                                        <div class="col-xs-12 body-center-bottom-body_list_bottom">
+
+                                            <p>
+
+                                                ≈{{marketInfo.mark}} {{sell_price*rate[this_symbol]}}
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-xs-12 body-center-bottom-body_list" v-else>
+
+                                        <div class="col-xs-12 body-center-bottom-body_list_left">
+
+                                            Sell at the best price in the market </div>
+
+                                    </div>
+
+                                    <div class="col-xs-12 body-center-bottom-body_list">
+
+                                        <div class="col-xs-6 body-center-bottom-body_list_left">
+
+                                            Amount </div>
+
+                                        <div class="col-xs-6 body-center-bottom-body_list_right">
+
+                                            {{marketInfo.market}}
+
+                                        </div>
+
+                                        <div class="col-xs-12 body-center-bottom-body_list_body">
+
+                                            <p>
+
+                                                <input type="number" class="ccinput" v-model="sell_amount">
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="col-xs-12 body-center-bottom-body_button">
+
+                                        <p v-if="deal_type == 1">
+
+                                            <span>Transaction amount</span>{{sell_amount*sell_price}} {{this_symbol}} ≈
+
+                                            {{marketInfo.mark}} {{sell_amount*sell_price*rate[this_symbol]}}
+
+
+
+                                        </p>
+
+
+
+
+
+                                        <button class="red" onclick="location.href='/login'">Login Or Register and trade
+
+                                            now</button>
+
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-7 body-center"  v-if="!vifstyle">
+
+                        <div class="col-xs-12 body-center-top new-head-bg">
+
+
+
+                            <div class="col-xs-12 body-center-top_left">
+
+                                <div class="top_float body-center-top_left_left">
+
+                                    <p class="market_title" @click="handleClick">
+
+                                        <b>{{marketInfo.market}}</b>/{{marketInfo.symbol}}
+
+                                    </p>
+
+                                    <span> Total:{{marketInfo.vol}}{{marketInfo.market}}</span>
+
+
+
+                                    <div class="body-center-top_alert " style="display: none">
+
+
+
+                                        <div class="col-xs-12 body-center-top_alert_bottom">
+
+
+
+                                            <div class="col-xs-12 body-center-top_alert_bottom_body">
+
+                                                <div class="desc_heght desc_info" v-html="marketInfo.market_desc">
+
+                                                </div>
+
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="top_float body-center-top_left_right">
+
+                                    <span> price</span>
+
+                                    <p>
+
+                                        {{marketInfo.close}}≈{{marketInfo.mark}}{{marketInfo.rate}}
+
+                                    </p>
+
+                                </div>
+
+                                <div class="top_float">
+
+                                    <span>24HRise and fall</span>
+
+                                    <p v-if="marketInfo.changepercent"
+                                        :class="marketInfo.changepercent >= 0 ? 'rise' : 'fall'">
+
+                                        {{marketInfo.changepercent}}%
+
+                                    </p>
+
+                                </div>
+
+                                <div class="top_float">
+
+                                    <span>24H High</span>
+
+                                    <p>
+
+                                        {{marketInfo.high}}
+
+                                    </p>
+
+                                </div>
+
+                                <div class="top_float">
+
+                                    <span>24H Low</span>
+
+                                    <p>
+
+                                        {{marketInfo.low}}
+
+                                    </p>
+
+                                </div>
+
+                                <div class="top_float">
+
+                                    <span>24H Vol</span>
+
+                                    <p>
+
+                                        {{marketInfo.amount}}
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        
+                        <!-- K线 -->
+                        <div :class="is_big_kline ? 'col-xs-12 body-center-body big_kline' : 'col-xs-12 body-center-body new-head-bg'" id="iframe_area">
+
+                            <span @click="big_kline()" class="big_span"><i class="iconfont icon-quanping"
+                                    style="font-size: 26px;"></i></span>
+
+                            <!-- K线0527 -->
+
+                            <iframe src="kline.html" id="iframe" frameborder="0" width="100%" height="100%"
+                                scrolling="no"></iframe>
+
+                            <!-- <span @click="big_kline()" class="big_span"></span>
+
+                            <iframe id="iframe" :src="kline_src" :width="kline_data.width+'px'"
+
+                                :height="kline_data.height+'px'" frameborder="no" border="0" marginwidth="0"
+
+                                marginheight="0" scrolling="no" allowtransparency="yes"></iframe> -->
+
+
+
+                        </div>
+
+                        <div class="col-xs-12 body-center-bottom">
+
+                            <div class="col-xs-12 body-center-bottom-top new-head-bg">
+
+                                <div @click="deal_type = 1"
+                                    :class="deal_type == 1 ? 'dell_type_add active' : 'dell_type_add'">
+
+                                    <p>
+
+                                        LIMIT ORDER </p>
+
+                                </div>
+
+                                <div @click="deal_type = 2"
+                                    :class="deal_type == 2 ? 'dell_type_add active' : 'dell_type_add'">
+
+                                    <p>
+
+                                        MARKET ORDER </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-xs-12 body-center-bottom-body new-head-bg">
+
+                                <div class="col-xs-6">
+
+                                    <div class="col-xs-4 body-center-bottom-body_top_left">
+
+                                        <p>
+
+                                            Buy {{marketInfo.market}}
+
+                                        </p>
+
+                                    </div>
+
+                                    <div class="col-xs-8 body-center-bottom-body_top_right">
+
+                                        <p onclick="location.href='/legal'">
+
+                                            <span>To recharge</span><b
+                                                v-if="userMoneys[this_symbol]">{{userMoneys[this_symbol]['account']}}
+
+                                                {{this_symbol}}</b>
+
+                                        </p>
+
+                                    </div>
+
+
+
+                                    <div class="col-xs-12 body-center-bottom-body_list" v-if="deal_type == 1">
+
+                                        <div class="col-xs-6 body-center-bottom-body_list_left">
+
+                                            Buying price <a @click="buy_price = marketInfo.close"
+                                                href="javascript:;">Latest price</a>
+
+                                        </div>
+
+                                        <div class="col-xs-6 body-center-bottom-body_list_right">
+
+                                            {{this_symbol}}
+
+                                        </div>
+
+                                        <div class="col-xs-12 body-center-bottom-body_list_body">
+
+                                            <p>
+
+                                                <input type="number" class="ccinput new-head-bg new-add-border" v-model="buy_price">
+
+                                            </p>
+
+                                        </div>
+
+                                        <div class="col-xs-12 body-center-bottom-body_list_bottom">
+
+                                            <p>
+
+                                                ≈{{marketInfo.mark}} {{buy_price*rate[this_symbol]}}
+
+
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-xs-12 body-center-bottom-body_list" v-else>
+
+                                        <div class="col-xs-12 body-center-bottom-body_list_left">
+
+                                            Buy at the best price in the market </div>
+
+                                    </div>
+
+
+
+                                    <div class="col-xs-12 body-center-bottom-body_list">
+
+                                        <div class="col-xs-6 body-center-bottom-body_list_left">
+
+                                            Amount </div>
+
+                                        <div class="col-xs-6 body-center-bottom-body_list_right">
+
+                                            {{marketInfo.market}}
+
+                                        </div>
+
+                                        <div class="col-xs-12 body-center-bottom-body_list_body">
+
+                                            <p>
+
+                                                <input type="number" class="ccinput new-head-bg new-add-border" v-model="buy_amount">
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="col-xs-12 body-center-bottom-body_button">
+
+                                        <p v-if="deal_type == 1">
+
+                                            <span>Transaction amount</span>{{buy_amount*buy_price}} {{this_symbol}} ≈
+
+                                            {{marketInfo.mark}} {{buy_amount*buy_price*rate[this_symbol]}}
+
+                                        </p>
+
+                                        <button class="lv" onclick="location.href='/login'">Login Or Register and trade
+
+                                            now</button>
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-xs-6">
+
+                                    <div class="col-xs-4 body-center-bottom-body_top_left">
+
+                                        <p>
+
+                                            Sell {{marketInfo.market}}
+
+                                        </p>
+
+                                    </div>
+
+                                    <div class="col-xs-12 body-center-bottom-body_list" v-if="deal_type == 1">
+
+                                        <div class="col-xs-6 body-center-bottom-body_list_left">
+
+                                            Selling price <a @click="sell_price = marketInfo.close"
+                                                href="javascript:;">Latest price</a>
+
+                                        </div>
+
+                                        <div class="col-xs-6 body-center-bottom-body_list_right">
+
+                                            {{this_symbol}}
+
+                                        </div>
+
+                                        <div class="col-xs-12 body-center-bottom-body_list_body">
+
+                                            <p>
+
+                                                <input type="number" class="ccinput new-head-bg new-add-border" v-model="sell_price">
+
+                                            </p>
+
+                                        </div>
+
+                                        <div class="col-xs-12 body-center-bottom-body_list_bottom">
+
+                                            <p>
+
+                                                ≈{{marketInfo.mark}} {{sell_price*rate[this_symbol]}}
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-xs-12 body-center-bottom-body_list" v-else>
+
+                                        <div class="col-xs-12 body-center-bottom-body_list_left">
+
+                                            Sell at the best price in the market </div>
+
+                                    </div>
+
+                                    <div class="col-xs-12 body-center-bottom-body_list">
+
+                                        <div class="col-xs-6 body-center-bottom-body_list_left">
+
+                                            Amount </div>
+
+                                        <div class="col-xs-6 body-center-bottom-body_list_right">
+
+                                            {{marketInfo.market}}
+
+                                        </div>
+
+                                        <div class="col-xs-12 body-center-bottom-body_list_body">
+
+                                            <p>
+
+                                                <input type="number" class="ccinput new-head-bg new-add-border" v-model="sell_amount">
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="col-xs-12 body-center-bottom-body_button">
+
+                                        <p v-if="deal_type == 1">
+
+                                            <span>Transaction amount</span>{{sell_amount*sell_price}} {{this_symbol}} ≈
+
+                                            {{marketInfo.mark}} {{sell_amount*sell_price*rate[this_symbol]}}
+
+
+
+                                        </p>
+
+
+
+
+
+                                        <button class="red" onclick="location.href='/login'">Login Or Register and trade
+
+                                            now</button>
+
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-2 body-right new-right-height" v-if="vifstyle">
+
+                        <div class="col-xs-12 body-right-top-tab new-right-max-height new-head-bg">
+
+                            <div class="col-xs-5 body-right-top-tab_left">
+
+                                <div :class="depthType == 0 ? 'col-xs-4 active' : 'col-xs-4' " @click="depthType = 0"
+                                    data-type="all" v-if=" marketInfo.market != 'NSC'">
+
+                                    <img src="https://exchange.gd-juzheng.com/static/img/whole@2x.png" alt="">
+
+                                </div>
+
+                                <div :class="depthType == 1 ? 'col-xs-4 active' : 'col-xs-4' " @click="depthType = 1"
+                                    data-type="rise">
+
+                                    <img src="https://exchange.gd-juzheng.com/static/img/purchase@2x.png" alt="">
+
+                                </div>
+
+                                <div :class="depthType == 2 ? 'col-xs-4 active' : 'col-xs-4' " @click="depthType = 2"
+                                    data-type="fall" v-if=" marketInfo.market != 'NSC'">
+
+                                    <img src="https://exchange.gd-juzheng.com/static/img/sell@2x.png" alt="">
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-xs-7 body-right-top-tab_right">
+
+                                <p class="dropdown-toggle" id="weishu" @click="weishu = !weishu" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+
+                                    <span>Deep merger{{precision}}Decimal places</span><img
+                                        src="https://exchange.gd-juzheng.com/static/img/reorder2@2x.png" alt="">
+
+                                </p>
+
+                                <ul class="dropdown-menu dropdown-menu-right" v-if="weishu">
+
+                                    <li><a @click="precision=2;weishu=false">2Decimal places</a></li>
+
+                                    <li><a @click="precision=3;weishu=false">3Decimal places</a></li>
+
+                                    <li><a @click="precision=4;weishu=false">4Decimal places</a></li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 body-right-show newAdd-maxHeight new-head-bg">
+
+                            <div class="col-xs-12 body-right-show-parameter">
+
+
+
+                                <div class="col-xs-4">
+
+                                    <span>Price({{this_symbol}})</span>
+
+                                </div>
+
+                                <div class="col-xs-4">
+
+                                    <span>Amount({{this_market}})</span>
+
+                                </div>
+
+                                <div class="col-xs-4">
+
+                                    <span>Total({{this_symbol}})</span>
+
+                                </div>
+
+                            </div>
+
+                            <div v-if="!is_show_wss" style="text-align: center;margin: 120px 0;">
+
+                                <img style="width: 30px;height: 30px;"
+                                    src="https://exchange.gd-juzheng.com/static/js/layer/theme/default/loading-1.gif"
+                                    alt="">
+
+                            </div>
+
+                            <div class="col-xs-12 body-right-show-list fall"
+                                v-if=" marketInfo.market != 'NSC' && is_show_wss && (depthType == 0 || depthType == 2)"
+                                :style=" depthType == 2 ? 'height:500px' : ''  ">
+
+
+
+                                <div class="col-xs-12" v-for="item in depthList.sell">
+
+                                    <p :style="'width: '+item.point+'%'">
+
+                                    </p>
+
+                                    <div class="col-xs-3 left">
+
+                                        <b>sell</b>
+
+                                    </div>
+
+                                    <div class="col-xs-3">
+
+                                        <span>{{item.price}}</span>
+
+                                    </div>
+
+                                    <div class="col-xs-3">
+
+                                        <span>{{item.account}}</span>
+
+                                    </div>
+
+                                    <div class="col-xs-3">
+
+                                        <span>{{item.sum}}</span>
+
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="col-xs-12 body-right-show-dynamic new-head-bg" v-if="depthType == 0">
+
+                                <div :class="marketInfo.changepercent >= 0 ? 'col-xs-12 rise' : 'col-xs-12 fall'">
+
+                                    <b>
+
+                                        price</b><span>{{marketInfo.close}}≈{{marketInfo.mark}}{{marketInfo.rate}}</span>
+
+                                </div>
+
+                                <img src="https://exchange.gd-juzheng.com/static/img/progress_bar@2x.png" alt="">
+
+                            </div>
+
+
+
+                            <div v-if="!is_show_wss" style="text-align: center;margin:150px 0;padding-top: 100px;">
+
+                                <img style="width: 30px;height: 30px;"
+                                    src="https://exchange.gd-juzheng.com/static/js/layer/theme/default/loading-1.gif"
+                                    alt="">
+
+                            </div>
+
+                            <div class="col-xs-12 body-right-show-list rise"
+                                v-if="is_show_wss && (depthType == 0 || depthType == 1)"
+                                :style=" marketInfo.market == 'NSC' || depthType == 1 ? 'height:500px' : ''  ">
+
+                                <div class="col-xs-12" v-for="item in depthList.buy">
+
+                                    <p :style="'width: '+item.point+'%'">
+
+                                    </p>
+
+                                    <div class="col-xs-3 left">
+
+                                        <b>buy</b>
+
+                                    </div>
+
+                                    <div class="col-xs-3">
+
+                                        <span>{{item.price}}</span>
+
+                                    </div>
+
+                                    <div class="col-xs-3">
+
+                                        <span>{{item.account}}</span>
+
+                                    </div>
+
+                                    <div class="col-xs-3">
+
+                                        <span>{{item.sum}}</span>
+
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 body-right-bottom" v-if="!vifstyle">
+
+                            <div class="col-xs-12 body-right-bottom-top">
+
+                                <b>Latest deal</b>
+
+                            </div>
+
+                            <div class="col-xs-12 body-right-bottom-body">
+
+                                <div class="col-xs-12 body-right-show-parameter">
+
+                                    <div class="col-xs-3 left">
+
+                                        <span>time</span>
+
+                                    </div>
+
+                                    <div class="col-xs-3 left">
+
+                                        <span>Direction</span>
+
+                                    </div>
+
+                                    <div class="col-xs-3">
+
+                                        <span>Price</span>
+
+                                    </div>
+
+                                    <div class="col-xs-3">
+
+                                        <span>Amount</span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div v-if="!is_show_wss" style="text-align: center;margin:150px 0;padding-top: 100px;">
+
+                                <img style="width: 30px;height: 30px;"
+                                    src="https://exchange.gd-juzheng.com/static/js/layer/theme/default/loading-1.gif"
+                                    alt="">
+
+                            </div>
+
+                            <div v-if="is_show_wss" class="col-xs-12 body-right-bottom-list">
+
+
+
+                                <div class="col-xs-12" v-for="item in HistoryTrade">
+
+                                    <div class="col-xs-5 left">
+
+                                        <span>{{item.ts}}</span>
+
+                                    </div>
+
+                                    <div v-if="item.direction == 'buy'" class="col-xs-2 left rise">
+
+                                        <b>Buy</b>
+
+                                    </div>
+
+                                    <div v-else class="col-xs-2 left fall">
+
+                                        <b>Sell</b>
+
+                                    </div>
+
+
+
+                                    <div class="col-xs-3">
+
+                                        <span>{{item.price}}</span>
+
+                                    </div>
+
+                                    <div class="col-xs-2">
+
+                                        <span>{{item.amount}}</span>
+
+                                    </div>
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-xs-3 body-right" v-if="!vifstyle">
+
+                        <div class="col-xs-12 body-right-top-tab new-head-bg">
+
+                            <div class="col-xs-5 body-right-top-tab_left">
+
+                                <div :class="depthType == 0 ? 'col-xs-4 active' : 'col-xs-4' " @click="depthType = 0"
+                                    data-type="all" v-if=" marketInfo.market != 'NSC'">
+
+                                    <img src="https://exchange.gd-juzheng.com/static/img/whole@2x.png" alt="">
+
+                                </div>
+
+                                <div :class="depthType == 1 ? 'col-xs-4 active' : 'col-xs-4' " @click="depthType = 1"
+                                    data-type="rise">
+
+                                    <img src="https://exchange.gd-juzheng.com/static/img/purchase@2x.png" alt="">
+
+                                </div>
+
+                                <div :class="depthType == 2 ? 'col-xs-4 active' : 'col-xs-4' " @click="depthType = 2"
+                                    data-type="fall" v-if=" marketInfo.market != 'NSC'">
+
+                                    <img src="https://exchange.gd-juzheng.com/static/img/sell@2x.png" alt="">
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-xs-7 body-right-top-tab_right">
+
+                                <p class="dropdown-toggle" id="weishu" @click="weishu = !weishu" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+
+                                    <span>Deep merger{{precision}}Decimal places</span><img
+                                        src="https://exchange.gd-juzheng.com/static/img/reorder2@2x.png" alt="">
+
+                                </p>
+
+                                <ul class="dropdown-menu dropdown-menu-right" v-if="weishu">
+
+                                    <li><a @click="precision=2;weishu=false">2Decimal places</a></li>
+
+                                    <li><a @click="precision=3;weishu=false">3Decimal places</a></li>
+
+                                    <li><a @click="precision=4;weishu=false">4Decimal places</a></li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 body-right-show new-head-bg old-right-height">
+
+                            <div class="col-xs-12 body-right-show-parameter">
+                                <div class="col-xs-4">
+                                    <span>Price({{this_symbol}})</span>
+                                </div>
+                                <div class="col-xs-4">
+                                    <span>Amount({{this_market}})</span>
+                                </div>
+                                <div class="col-xs-4">
+                                    <span>Total({{this_symbol}})</span>
+                                </div>
+                            </div>
+
+                            <div v-if="!is_show_wss" style="text-align: center;margin: 120px 0;">
+
+                                <img style="width: 30px;height: 30px;"
+                                    src="https://exchange.gd-juzheng.com/static/js/layer/theme/default/loading-1.gif"
+                                    alt="">
+
+                            </div>
+
+                            <div class="col-xs-12 body-right-show-list fall"
+                                v-if=" marketInfo.market != 'NSC' && is_show_wss && (depthType == 0 || depthType == 2)"
+                                :style=" depthType == 2 ? 'height:500px' : ''  ">
+
+
+
+                                <div class="col-xs-12" v-for="item in depthList.sell">
+
+                                    <p :style="'width: '+item.point+'%'">
+
+                                    </p>
+
+                                    <div class="col-xs-3 left">
+
+                                        <b>sell</b>
+
+                                    </div>
+
+                                    <div class="col-xs-3">
+
+                                        <span>{{item.price}}</span>
+
+                                    </div>
+
+                                    <div class="col-xs-3">
+
+                                        <span>{{item.account}}</span>
+
+                                    </div>
+
+                                    <div class="col-xs-3">
+
+                                        <span>{{item.sum}}</span>
+
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="col-xs-12 body-right-show-dynamic new-head-bg" v-if="depthType == 0">
+
+                                <div :class="marketInfo.changepercent >= 0 ? 'col-xs-12 rise' : 'col-xs-12 fall'">
+
+                                    <b>
+
+                                        price</b><span>{{marketInfo.close}}≈{{marketInfo.mark}}{{marketInfo.rate}}</span>
+
+                                </div>
+
+                                <img src="https://exchange.gd-juzheng.com/static/img/progress_bar@2x.png" alt="">
+
+                            </div>
+
+
+
+                            <div v-if="!is_show_wss" style="text-align: center;margin:150px 0;padding-top: 100px;">
+
+                                <img style="width: 30px;height: 30px;"
+                                    src="https://exchange.gd-juzheng.com/static/js/layer/theme/default/loading-1.gif"
+                                    alt="">
+
+                            </div>
+
+                            <div class="col-xs-12 body-right-show-list rise"
+                                v-if="is_show_wss && (depthType == 0 || depthType == 1)"
+                                :style=" marketInfo.market == 'NSC' || depthType == 1 ? 'height:500px' : ''  ">
+
+                                <div class="col-xs-12" v-for="item in depthList.buy">
+
+                                    <p :style="'width: '+item.point+'%'">
+
+                                    </p>
+
+                                    <div class="col-xs-3 left">
+
+                                        <b>buy</b>
+
+                                    </div>
+
+                                    <div class="col-xs-3">
+
+                                        <span>{{item.price}}</span>
+
+                                    </div>
+
+                                    <div class="col-xs-3">
+
+                                        <span>{{item.account}}</span>
+
+                                    </div>
+
+                                    <div class="col-xs-3">
+
+                                        <span>{{item.sum}}</span>
+
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 body-right-bottom new-head-bg" v-if="!vifstyle">
+
+                            <div class="col-xs-12 body-right-bottom-top">
+
+                                <b>Latest deal</b>
+
+                            </div>
+
+                            <div class="col-xs-12 body-right-bottom-body">
+
+                                <div class="col-xs-12 body-right-show-parameter">
+
+                                    <div class="col-xs-3 left">
+
+                                        <span>time</span>
+
+                                    </div>
+
+                                    <div class="col-xs-3 left">
+
+                                        <span>Direction</span>
+
+                                    </div>
+
+                                    <div class="col-xs-3">
+
+                                        <span>Price</span>
+
+                                    </div>
+
+                                    <div class="col-xs-3">
+
+                                        <span>Amount</span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div v-if="!is_show_wss" style="text-align: center;margin:150px 0;padding-top: 100px;">
+
+                                <img style="width: 30px;height: 30px;"
+                                    src="https://exchange.gd-juzheng.com/static/js/layer/theme/default/loading-1.gif"
+                                    alt="">
+
+                            </div>
+
+                            <div v-if="is_show_wss" class="col-xs-12 body-right-bottom-list">
+
+
+
+                                <div class="col-xs-12" v-for="item in HistoryTrade">
+
+                                    <div class="col-xs-5 left">
+
+                                        <span>{{item.ts}}</span>
+
+                                    </div>
+
+                                    <div v-if="item.direction == 'buy'" class="col-xs-2 left rise">
+
+                                        <b>Buy</b>
+
+                                    </div>
+
+                                    <div v-else class="col-xs-2 left fall">
+
+                                        <b>Sell</b>
+
+                                    </div>
+
+
+
+                                    <div class="col-xs-3">
+
+                                        <span>{{item.price}}</span>
+
+                                    </div>
+
+                                    <div class="col-xs-2">
+
+                                        <span>{{item.amount}}</span>
+
+                                    </div>
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- 新增最右部分 -->
+                    <div class="col-xs-2 body-right-bottom newAdd-right-reset  new-head-bg" v-if="vifstyle">
+                        <div class="col-xs-12 body-right-bottom-top new-head-bg">
+                            <b>Latest deal</b>
+                        </div>
+
+                        <div class="col-xs-12 body-right-bottom-body new-head-bg">
+
+                            <div class="col-xs-12 body-right-show-parameter">
+
+                                <div class="col-xs-3 left">
+
+                                    <span>time</span>
+
+                                </div>
+
+                                <div class="col-xs-3 left">
+
+                                    <span>Direction</span>
+
+                                </div>
+
+                                <div class="col-xs-3">
+
+                                    <span>Price</span>
+
+                                </div>
+
+                                <div class="col-xs-3">
+
+                                    <span>Amount</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div v-if="!is_show_wss" style="text-align: center;margin:150px 0;padding-top: 100px;">
+
+                            <img style="width: 30px;height: 30px;"
+                                src="https://exchange.gd-juzheng.com/static/js/layer/theme/default/loading-1.gif"
+                                alt="">
+
+                        </div>
+
+                        <div v-if="is_show_wss" class="col-xs-12 body-right-bottom-list  newAdd-body-right-bottom new-head-bg">
+
+
+
+                            <div class="col-xs-12" v-for="item in HistoryTrade">
+
+                                <div class="col-xs-5 left">
+
+                                    <span>{{item.ts}}</span>
+
+                                </div>
+
+                                <div v-if="item.direction == 'buy'" class="col-xs-2 left rise">
+
+                                    <b>Buy</b>
+
+                                </div>
+
+                                <div v-else class="col-xs-2 left fall">
+
+                                    <b>Sell</b>
+
+                                </div>
+
+
+
+                                <div class="col-xs-3">
+
+                                    <span>{{item.price}}</span>
+
+                                </div>
+
+                                <div class="col-xs-2">
+
+                                    <span>{{item.amount}}</span>
+
+                                </div>
+
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-7 bottom newAdd-bottom-width"  v-if="vifstyle">
+
+                    <div class="col-xs-12 bottom-top  new-head-bg">
+
+                        <div class="col-xs-8 bottom-top-left">
+
+                            <div :class="order_status == 0 ? 'btl_menu active' : 'btl_menu'" @click="changeOrder(0)">
+
+                                <p>
+
+                                    Present entrust </p>
+
+                            </div>
+
+                            <div :class="order_status == 1 ? 'btl_menu active' : 'btl_menu'" @click="changeOrder(1)">
+
+                                <p>
+
+                                    Historical entrust </p>
+
+                            </div>
+
+                            <div :class="order_status == 2 ? 'btl_menu active' : 'btl_menu'" @click="changeOrder(2)">
+
+                                <p>
+
+                                    Historical deal </p>
+
+                            </div>
+
+                            <div :class="order_status == 3 ? 'btl_menu active' : 'btl_menu'" @click="changeOrder(3)">
+
+                                <p>
+
+                                    My assets </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-4 bottom-top-right">
+
+                            <div class="col-xs-6">
+
+                                <p>
+
+                                    <input id="input-checkbox" v-model="order_show_all" checked="checked"
+                                        type="checkbox">
+
+                                    <label for="input-checkbox">All currency pairs</label>
+
+                                </p>
+
+                            </div>
+
+                            <div class="col-xs-6">
+
+                                <p @click="repealOrderAll()">
+
+                                    All canceled order </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-12 bottom-body newAdd-bottom-minheight new-head-bg">
+
+                        <div class="col-xs-12 bottom-list list1" v-if="order_status != 3">
+
+                            <div class="col-xs-12 list-tab">
+
+                                <div>
+
+                                    <p>time</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Transaction type</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Coin</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Direction</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Price</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Amount</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Total amount of entrust</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Deal price</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>state</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Operate</p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div v-if="order_list.length > 0" class="col-xs-12" v-for="item in order_list">
+
+                                <div>
+
+                                    <p><span>{{item.buy_time_text}}</span></p>
+
+                                </div>
+
+                                <div>
+
+                                    <p><a v-if="item.deal_type == 1" class="rise" href="javascript:;">LIMIT ORDER</a><a
+                                            v-else class="fall" href="javascript:;">MARKET ORDER</a> </p>
+
+                                </div>
+
+                                <div>
+
+                                    <p><b>{{item.market}}</b><span>/{{item.symbol}}</span></p>
+
+                                </div>
+
+                                <div>
+
+                                    <p v-if="item.order_type == 1" class="rise">Buy</p>
+
+                                    <p v-else class="fall">Sell</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>{{item.buy_price}}</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>{{item.amount}} {{item.market}}</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>{{item.symbol_amount}}</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>{{item.deal_price}}</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>{{item.status_text}}</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p v-if="item.status == 0"><a @click="repealOrder(item.id)"
+                                            href="javascript:;">Cancel order</a></p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <p v-if="order_page_next" class="order_page_next"><a @click="get_orderList"
+                                    href="javascript:;">Load more</a></p>
+
+
+
+
+
+                            <div class="col-xs-12 no_deal" v-if="order_list.length == 0">
+
+                                <p class="">No records</p>
+
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="col-xs-12 bottom-list list4" v-if="order_status == 3">
+
+                            <div class="col-xs-12 list-tab">
+
+                                <div>
+
+                                    <p>Currency type</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Holding quantity</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Available quantity</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Froze quantity</p>
+
+                                </div>
+
+                                <div style="display: none">
+
+                                    <p>Valuation</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-xs-12" v-for="item in userMoneys">
+
+
+
+                                <div>
+
+                                    <p><b>{{item.market}}</b><span></span></p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>{{item.account*1 + item.lock_account*1}}</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p><b>{{item.account}}</b></p>
+
+                                </div>
+
+                                <div>
+
+                                    <p class="rise">{{item.lock_account}}</p>
+
+                                </div>
+
+                                <div style="display: none">
+
+                                    <p></p>
+
+                                </div>
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-xs-4 body-center-bottom newAdd-right-width" v-if="vifstyle">
+
+                    <div class="col-xs-12 body-center-bottom-top new-head-bg">
+
+                        <div @click="deal_type = 1"
+                            :class="deal_type == 1 ? 'dell_type_add active' : 'dell_type_add'">
+
+                            <p>
+
+                                LIMIT ORDER </p>
+
+                        </div>
+
+                        <div @click="deal_type = 2"
+                            :class="deal_type == 2 ? 'dell_type_add active' : 'dell_type_add'">
+
+                            <p>
+
+                                MARKET ORDER </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-12 body-center-bottom-body new-head-bg">
+
+                        <div class="col-xs-12">
+
+                            <div class="col-xs-4 body-center-bottom-body_top_left">
+
+                                <p>
+
+                                    Buy {{marketInfo.market}}
+
+                                </p>
+
+                            </div>
+
+                            <div class="col-xs-8 body-center-bottom-body_top_right">
+
+                                <p onclick="location.href='/legal'">
+
+                                    <span>To recharge</span><b
+                                        v-if="userMoneys[this_symbol]">{{userMoneys[this_symbol]['account']}}
+
+                                        {{this_symbol}}</b>
+
+                                </p>
+
+                            </div>
+
+
+
+                            <div class="col-xs-12 body-center-bottom-body_list" v-if="deal_type == 1">
+
+                                <div class="col-xs-6 body-center-bottom-body_list_left">
+
+                                    Buying price <a @click="buy_price = marketInfo.close"
+                                        href="javascript:;">Latest price</a>
+
+                                </div>
+
+                                <div class="col-xs-6 body-center-bottom-body_list_right">
+
+                                    {{this_symbol}}
+
+                                </div>
+
+                                <div class="col-xs-12 body-center-bottom-body_list_body">
+
+                                    <p>
+
+                                        <input type="number" class="ccinput new-head-bg new-add-border" v-model="buy_price">
+
+                                    </p>
+
+                                </div>
+
+                                <div class="col-xs-12 body-center-bottom-body_list_bottom">
+
+                                    <p>
+
+                                        ≈{{marketInfo.mark}} {{buy_price*rate[this_symbol]}}
+
+
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-xs-12 body-center-bottom-body_list" v-else>
+
+                                <div class="col-xs-12 body-center-bottom-body_list_left">
+
+                                    Buy at the best price in the market </div>
+
+                            </div>
+
+
+
+                            <div class="col-xs-12 body-center-bottom-body_list">
+
+                                <div class="col-xs-6 body-center-bottom-body_list_left">
+
+                                    Amount </div>
+
+                                <div class="col-xs-6 body-center-bottom-body_list_right">
+
+                                    {{marketInfo.market}}
+
+                                </div>
+
+                                <div class="col-xs-12 body-center-bottom-body_list_body">
+
+                                    <p>
+
+                                        <input type="number" class="ccinput new-head-bg new-add-border" v-model="buy_amount">
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-xs-12 body-center-bottom-body_button">
+
+                                <p v-if="deal_type == 1">
+
+                                    <span>Transaction amount</span>{{buy_amount*buy_price}} {{this_symbol}} ≈
+
+                                    {{marketInfo.mark}} {{buy_amount*buy_price*rate[this_symbol]}}
+
+                                </p>
+
+                                <button class="lv" onclick="location.href='/login'">Login Or Register and trade
+
+                                    now</button>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-xs-12 bottom"  v-if="!vifstyle">
+
+                    <div class="col-xs-12 bottom-top new-head-bg">
+
+                        <div class="col-xs-8 bottom-top-left">
+
+                            <div :class="order_status == 0 ? 'btl_menu active' : 'btl_menu'" @click="changeOrder(0)">
+
+                                <p>
+
+                                    Present entrust </p>
+
+                            </div>
+
+                            <div :class="order_status == 1 ? 'btl_menu active' : 'btl_menu'" @click="changeOrder(1)">
+
+                                <p>
+
+                                    Historical entrust </p>
+
+                            </div>
+
+                            <div :class="order_status == 2 ? 'btl_menu active' : 'btl_menu'" @click="changeOrder(2)">
+
+                                <p>
+
+                                    Historical deal </p>
+
+                            </div>
+
+                            <div :class="order_status == 3 ? 'btl_menu active' : 'btl_menu'" @click="changeOrder(3)">
+
+                                <p>
+
+                                    My assets </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-4 bottom-top-right">
+
+                            <div class="col-xs-6">
+
+                                <p>
+
+                                    <input id="input-checkbox" v-model="order_show_all" checked="checked"
+                                        type="checkbox">
+
+                                    <label for="input-checkbox">All currency pairs</label>
+
+                                </p>
+
+                            </div>
+
+                            <div class="col-xs-6">
+
+                                <p @click="repealOrderAll()">
+
+                                    All canceled order </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-12 bottom-body new-head-bg">
+
+                        <div class="col-xs-12 bottom-list list1" v-if="order_status != 3">
+
+                            <div class="col-xs-12 list-tab">
+
+                                <div>
+
+                                    <p>time</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Transaction type</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Coin</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Direction</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Price</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Amount</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Total amount of entrust</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Deal price</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>state</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Operate</p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div v-if="order_list.length > 0" class="col-xs-12" v-for="item in order_list">
+
+                                <div>
+
+                                    <p><span>{{item.buy_time_text}}</span></p>
+
+                                </div>
+
+                                <div>
+
+                                    <p><a v-if="item.deal_type == 1" class="rise" href="javascript:;">LIMIT ORDER</a><a
+                                            v-else class="fall" href="javascript:;">MARKET ORDER</a> </p>
+
+                                </div>
+
+                                <div>
+
+                                    <p><b>{{item.market}}</b><span>/{{item.symbol}}</span></p>
+
+                                </div>
+
+                                <div>
+
+                                    <p v-if="item.order_type == 1" class="rise">Buy</p>
+
+                                    <p v-else class="fall">Sell</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>{{item.buy_price}}</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>{{item.amount}} {{item.market}}</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>{{item.symbol_amount}}</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>{{item.deal_price}}</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>{{item.status_text}}</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p v-if="item.status == 0"><a @click="repealOrder(item.id)"
+                                            href="javascript:;">Cancel order</a></p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <p v-if="order_page_next" class="order_page_next"><a @click="get_orderList"
+                                    href="javascript:;">Load more</a></p>
+
+
+
+
+
+                            <div class="col-xs-12 no_deal" v-if="order_list.length == 0">
+
+                                <p class="">No records</p>
+
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="col-xs-12 bottom-list list4" v-if="order_status == 3">
+
+                            <div class="col-xs-12 list-tab">
+
+                                <div>
+
+                                    <p>Currency type</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Holding quantity</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Available quantity</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>Froze quantity</p>
+
+                                </div>
+
+                                <div style="display: none">
+
+                                    <p>Valuation</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-xs-12" v-for="item in userMoneys">
+
+
+
+                                <div>
+
+                                    <p><b>{{item.market}}</b><span></span></p>
+
+                                </div>
+
+                                <div>
+
+                                    <p>{{item.account*1 + item.lock_account*1}}</p>
+
+                                </div>
+
+                                <div>
+
+                                    <p><b>{{item.account}}</b></p>
+
+                                </div>
+
+                                <div>
+
+                                    <p class="rise">{{item.lock_account}}</p>
+
+                                </div>
+
+                                <div style="display: none">
+
+                                    <p></p>
+
+                                </div>
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <script>
+                ws = new WebSocket("WSS://hoidex.com:2345/market");
+
+                var think_var = "en";
+
+                var market = 'ETH';
+
+                var symbol = 'usdt';
+
+                var rate = JSON.parse('{"btc":9504.2,"usdt":1}')
+
+
+
+
+
+                var app = new Vue({
+
+                    el: '#app',
+
+                    data: {
+                        vifstyle: true,
+
+                        market: '',
+
+                        marketList: {},
+
+                        this_market: market,
+
+                        this_symbol: symbol,
+
+                        market_param: {
+
+                            symbol: symbol,
+
+                            order: 'weigh',
+
+                            sort: 'desc',
+
+                            market: '',
+
+                            think_var: think_var,
+
+                        },
+
+                        market_param_market: "",
+
+                        ws_params: {},
+
+                        marketInfo: {},
+
+                        kline_src: "",
+
+                        kline_data: {},
+
+
+
+
+
+                        deal_type: 1,
+
+                        buy_price: '',
+
+                        sell_price: '',
+
+                        buy_amount: '',
+
+                        sell_amount: '',
+
+
+
+                        userInfo: [],
+
+                        userMoneys: {},
+
+
+
+                        order_status: 0,
+
+                        order_page: 1,
+
+                        order_list: {},
+
+                        order_show_all: true,
+
+                        order_page_next: false,
+
+                        order_dell_list: {},
+
+
+
+                        //成交量
+
+                        precision: 2, //倍数
+
+                        depthList: {},
+
+                        depthType: 0,
+
+                        HistoryTrade: {},
+
+
+
+                        rateAmount: 0,
+
+                        rate: rate,
+
+                        //是否全屏K线
+
+                        is_big_kline: false,
+
+
+
+                        //币种简介
+
+                        market_desc_show: false,
+
+                        weishu: false,
+
+
+
+                        is_show_wss: false,
+
+
+
+
+
+                    },
+
+                    created() {
+                        let url = window.location.href
+                        if(url.split('?')[1].split('=')[1] == 'en'){
+                            this.vifstyle = true
+                        } else {
+                            this.vifstyle = false
+                        }
+                        var _this = this;
+
+                        ws.onopen = function () {
+
+                            _this.ws_params = {
+
+                                type: 'c2c',
+
+                            }
+
+                            ws.send(JSON.stringify(_this.ws_params));
+
+                        };
+
+
+
+                        //k线
+
+
+
+                        setTimeout(function () {
+
+                            _this.showKline();
+
+                        }, 500)
+
+                        //获取用户信息
+
+                        this.get_userInfo();
+
+                        //获取用户钱包
+
+                        this.get_userMoneys();
+
+                        //获取订单列表
+
+                        setInterval(function () {
+
+                            _this.get_userOrder();
+
+                        }, 2000)
+
+
+
+                    },
+
+                    methods: {
+                        
+                        handleClick() {
+                            this.vifstyle = !this.vifstyle
+                        },
+                        //全屏K线
+
+                        big_kline() {
+
+                            this.is_big_kline = !this.is_big_kline;
+
+                            var _this = this;
+
+                            setTimeout(function () {
+
+                                _this.showKline();
+
+                            }, 800)
+
+                        },
+
+                        //排序
+
+                        editSort(sort) {
+
+
+
+                            if (sort == this.market_param.order) {
+
+                                if (this.market_param.sort == 'desc') {
+
+                                    this.market_param.sort = 'asc'
+
+                                } else {
+
+                                    this.market_param.sort = 'desc'
+
+                                }
+
+                            } else {
+
+                                this.market_param.sort = 'desc'
+
+                            }
+
+                            this.market_param.order = sort;
+
+
+
+
+
+                        },
+
+                        //卖出
+
+                        sellOrder() {
+
+                            var _this = this;
+
+                            if (_this.deal_type == 1 && (!_this.sell_price || _this.sell_price <= 0)) {
+
+                                layer.msg('Please enter the selling price');
+
+                                return;
+
+                            }
+
+                            if (!_this.sell_amount || _this.sell_amount <= 0) {
+
+                                layer.msg('Please enter the quantity sold');
+
+                                return;
+
+                            }
+
+
+
+                            var params = {
+
+                                deal_type: _this.deal_type,
+
+                                sell_price: _this.sell_price,
+
+                                sell_amount: _this.sell_amount,
+
+                                marke_id: _this.marketInfo.id,
+
+                            }
+
+
+
+                            $.post("https://exchange.gd-juzheng.com/api/order/sellOrder", params, function (
+
+                                res) {
+
+                                layer.msg(res.msg);
+
+                                //购买成功后
+
+                                if (res.code == 1) {
+
+                                    _this.get_userInfo();
+
+                                    _this.get_userMoneys();
+
+                                    _this.sell_amount = ''
+
+                                    _this.get_userOrder();
+
+                                }
+
+                            }, 'json')
+
+                        },
+
+                        //撤单
+
+                        repealOrder(id) {
+
+                            var _this = this;
+
+                            if (!id) return;
+
+                            layer.confirm('Are you sure to cancel the order', {
+
+                                btn: ['Sure', 'No'],
+
+                                title: 'Tip'
+
+                            }, function () {
+
+                                layer.load();
+
+                                $.post("https://exchange.gd-juzheng.com/api/order/repealOrder", {
+
+                                    id: id
+
+                                }, function (res) {
+
+                                    layer.closeAll();
+
+                                    layer.msg(res.msg);
+
+                                    if (res.code == 1) {
+
+                                        if (_this.order_status == 0) {
+
+                                            _this.get_userOrder()
+
+                                        } else {
+
+                                            _this.changeOrder(_this.order_status)
+
+                                        }
+
+                                    }
+
+
+
+                                }, 'json')
+
+                            })
+
+
+
+                        },
+
+
+
+                        //批量撤单
+
+                        repealOrderAll() {
+
+                            var _this = this;
+
+                            //是否登录
+
+                            if (_this.userInfo.length == 0) {
+
+                                layer.msg("Please log in first")
+
+                                return false;
+
+
+
+                            }
+
+                            layer.confirm('Are you sure to cancel all orders', {
+
+                                btn: ['Sure', 'No'],
+
+                                title: 'Tip'
+
+                            }, function () {
+
+                                layer.load();
+
+                                $.post("https://exchange.gd-juzheng.com/api/order/repealOrderAll", {},
+
+                                    function (res) {
+
+                                        layer.closeAll();
+
+                                        layer.msg(res.msg);
+
+                                        if (res.code == 1) {
+
+                                            if (_this.order_status == 0) {
+
+                                                _this.get_userOrder()
+
+                                            } else {
+
+                                                _this.changeOrder(_this.order_status)
+
+                                            }
+
+                                        }
+
+
+
+                                    }, 'json')
+
+                            })
+
+                        },
+
+
+
+                        //修改订单列表
+
+                        changeOrder(status) {
+
+                            var _this = this;
+
+                            _this.order_status = status;
+
+                            _this.order_page = 1;
+
+                            _this.order_list = [];
+
+                            _this.order_page_next = false;
+
+                            if (status == 0) {
+
+                                _this.get_userOrder();
+
+                            }
+
+                            if (status == 1 || status == 2) {
+
+                                _this.get_orderList();
+
+                            }
+
+                            if (status == 3) {
+
+                                _this.get_userMoneys();
+
+                            }
+
+
+
+                        },
+
+                        //获取成交订单
+
+                        get_orderList() {
+
+                            var _this = this;
+
+                            var params = {
+
+                                order_page: _this.order_page
+
+                            }
+
+                            if (_this.order_status == 2) {
+
+                                params.status = 1;
+
+                            }
+
+                            if (!_this.order_show_all) {
+
+                                params.market = _this.this_market;
+
+                                params.symbol = _this.this_symbol;
+
+                            }
+
+                            $.post("https://exchange.gd-juzheng.com/api/order/userOrderList", params, function (
+
+                                res) {
+
+
+
+                                for (var i = 0; i < res.data.data.length; i++) {
+
+                                    _this.order_list.push(res.data.data[i])
+
+                                }
+
+
+
+                                if (res.data.last_page > _this.order_page) {
+
+                                    _this.order_page_next = true;
+
+                                } else {
+
+                                    _this.order_page_next = false;
+
+                                }
+
+
+
+                                if (res.data.data.length == 0) {
+
+                                    _this.order_page_next = false;
+
+                                }
+
+
+
+                                _this.order_page++;
+
+
+
+                            }, 'json')
+
+                        },
+
+                        //获取委托中订单列表
+
+                        get_userOrder() {
+
+                            var _this = this;
+
+                            if (_this.order_status != 0) {
+
+                                return;
+
+                            }
+
+                            var params = {
+
+                                status: _this.order_status
+
+                            }
+
+                            if (!_this.order_show_all) {
+
+                                params.market = _this.this_market;
+
+                                params.symbol = _this.this_symbol;
+
+                            }
+                            // 上线将此打开 --06-17
+                            $.post("https://exchange.gd-juzheng.com/api/order/userOrderApply", params,
+
+                                function (res) {
+
+                                    _this.order_list = res.data;
+
+                                }, 'json')
+
+                        },
+
+
+
+                        //买入
+
+                        buy() {
+
+                            var _this = this;
+
+                            if (_this.deal_type == 1 && (!_this.buy_price || _this.buy_price <= 0)) {
+
+                                layer.msg('Please enter the purchase price');
+
+                                return;
+
+                            }
+
+                            if (!_this.buy_amount || _this.buy_amount <= 0) {
+
+                                layer.msg('Please enter the purchase quantity');
+
+                                return;
+
+                            }
+
+
+
+                            var params = {
+
+                                deal_type: _this.deal_type,
+
+                                buy_price: _this.buy_price,
+
+                                buy_amount: _this.buy_amount,
+
+                                marke_id: _this.marketInfo.id,
+
+                            }
+
+
+
+                            $.post("/api/order/addCtc", params, function (res) {
+
+                                layer.msg(res.msg);
+
+                                //购买成功后
+
+                                if (res.code == 1) {
+
+                                    _this.get_userInfo();
+
+                                    _this.get_userMoneys();
+
+                                    _this.buy_amount = ''
+
+                                    _this.get_userOrder();
+
+                                }
+
+                            }, 'json')
+
+
+
+
+
+                        },
+
+                        //获取用户信息
+
+                        get_userInfo() {
+
+                            var _this = this;
+
+                            $.post('https://exchange.gd-juzheng.com/api/user/userInfo', {}, function (res) {
+
+                                if (res.code == 1) {
+
+                                    _this.userInfo = res.data;
+
+                                }
+
+                            })
+
+
+
+                        },
+
+                        //获取钱包
+
+                        get_userMoneys() {
+
+                            var _this = this;
+
+                            $.post('https://exchange.gd-juzheng.com/api/user/UserMoneys', {}, function (res) {
+
+                                if (res.code == 1) {
+
+                                    _this.userMoneys = res.data;
+
+                                }
+
+                            })
+
+                        },
+
+
+
+                        //显示K线
+
+                        showKline() {
+
+                            var _this = this;
+
+                            _this.kline_data = {
+
+                                market: _this.this_market,
+
+                                symbol: _this.this_symbol,
+
+                                height: $("#iframe_area").height(),
+
+                                width: $("#iframe_area").width(),
+
+                            }
+
+                            if (_this.is_big_kline) {
+
+                                _this.kline_data.height = $("body").height();
+
+                                _this.kline_data.width = $("body").width();
+
+                            }
+
+                            clog(_this.kline_data);
+
+                            _this.kline_src = "/kline?data=" + JSON.stringify(_this.kline_data);
+
+                        },
+
+
+
+                        //点击左侧市场
+
+                        changeMarket(market) {
+
+                            this.buy_price = '';
+
+                            this.this_market = market.market;
+
+                            this.this_symbol = market.symbol;
+
+
+
+                            let frame1 = window.frames[0];
+
+                            let str = this.this_market + '/' + this.this_symbol
+
+                            frame1.postMessage(str)
+
+                            this.showKline();
+
+                        },
+
+
+
+                        //点击顶部切换市场
+
+                        changeSymbol(symbol) {
+
+                            if (symbol == 'BTC' && this.this_market == 'btc') {
+
+                                this.this_market = this.marketList[1]['market'];
+
+                            }
+
+                            this.buy_price = '';
+
+                            this.buy_amount = '';
+
+                            this.sell_price = '';
+
+                            this.sell_amount = '';
+
+                            this.market_param.symbol = symbol;
+
+                            this.this_symbol = symbol;
+
+                            this.showKline();
+
+
+
+                        },
+
+
+
+                        ws_send() {
+
+                            var _this = this;
+
+                            _this.ws_params = {
+
+                                type: 'c2c',
+
+                                market_list: _this.market_param,
+
+                                market_symbol: _this.this_market + _this.this_symbol,
+
+                                precision: _this.precision,
+
+                            }
+
+                            ws.send(JSON.stringify(_this.ws_params));
+
+                        },
+
+
+
+                    },
+                    computed: {
+                        
+                    },
+
+                })
+
+
+
+
+
+
+
+
+
+                ws.onmessage = function (e) {
+
+
+
+                    var res = JSON.parse(e.data);
+
+
+
+                    app.marketList = res.marketList;
+
+                    app.marketInfo = res.marketInfo;
+
+                    app.depthList = res.depth;
+
+                    app.HistoryTrade = res.HistoryTrade;
+
+                    app.is_show_wss = true;
+
+
+
+                    if (res.marketInfo) {
+
+                        $('title').html(res.marketInfo.close + ' ' + res.marketInfo.market)
+
+                    }
+
+
+
+                    setTimeout(function () {
+
+                        app.ws_send()
+
+                    }, 500)
+
+                };
+
+
+
+
+
+                $(window).resize(function () {
+
+                    app.showKline()
+
+                });
+
+
+
+
+
+                document.onkeydown = function (event) {
+
+                    var e = event || window.event || arguments.callee.caller.arguments[0];
+
+                    if (e.keyCode == 27) {
+
+
+
+                        if (app.is_big_kline === true) {
+
+                            app.big_kline();
+
+                        }
+
+
+
+                    }
+
+                }
+
+
+
+                var height_is_click = false;
+
+
+
+                $(".body-center-top_left_left").mouseover(function () {
+
+                    if (height_is_click) {
+
+                        return;
+
+                    }
+
+
+
+                    var _height = $('.body-center-top_alert').height()
+
+                    //alert(_height)
+
+                    if (_height >= 280) {
+
+                        $('.show_desc_heght').show();
+
+                        $('.desc_info').addClass('desc_heght');
+
+                    } else {
+
+                        $('.show_desc_heght').hide();
+
+                        $('.desc_info').removeClass('desc_heght');
+
+                    }
+
+
+
+
+
+                    $('.body-center-top_alert').show()
+
+
+
+                });
+
+
+
+                $(".body-center-top").mouseout(function () {
+
+                    height_is_click = false;
+
+                    $('.body-center-top_alert').hide()
+
+                });
+
+
+
+
+
+                $('.show_desc_heght').click(function () {
+
+                    height_is_click = true;
+
+                    $('.show_desc_heght').hide();
+
+                    $('.desc_info').removeClass('desc_heght');
+
+                })
+            </script>
+
+            <script>
+                // 多语言图表
+
+                $('#lang li a').on('mouseover', function () {
+
+                    let type = this.innerText
+
+                    var frame1 = window.frames[0];
+
+                    frame1.postMessage(type)
+
+                })
+            </script>
+
+            <div class="col-xs-12 footer new-head-bg">
+
+                <div class="col-xs-3 foot-bottom">
+
+                    <img src="https://exchange.gd-juzheng.com/uploads/20200405/deb2378b88913caed80bde3ba8e6da42.png"
+                        alt="">
+
+                </div>
+
+                <div class="col-xs-6 foot-left">
+
+                    <div class="foot-left-list">
+
+                        <b>About us</b>
+
+                        <p>
+
+                            <a href="/article/6">Rate management</a>
+
+                        </p>
+
+                        <p>
+
+                            <a href="/article/5">Privacy policy</a>
+
+                        </p>
+
+                        <p>
+
+                            <a href="/article/3">Hoidex introduce</a>
+
+                        </p>
+
+
+
+                    </div>
+
+                    <div class="foot-left-list">
+
+                        <b>Common problems</b>
+
+                        <p>
+
+                            <a href="/article/8">How to prevent phishing attacks</a>
+
+                        </p>
+
+                        <p>
+
+                            <a href="/article/7">How to enhance account security</a>
+
+                        </p>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-xs-3 foot-bottom" style="color: #fff;margin-top: 60px;font-size: 16px">
+
+                    mailbox： Hoidexservice@gmail.com </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://exchange.gd-juzheng.com/static/js/public.js"></script>
+
+     <script type="text/javascript">
+        //     $(function () {
+
+        //         //广告列表移入展示
+
+        //         $('.advertising-list').hover(
+
+        //             function () {
+
+        //                 $(this).addClass('active').find('div').show(100);
+
+        //             },
+
+        //             function () {
+
+        //                 $(this).removeClass('active').find('div').hide();
+
+        //             }
+
+        //         )
+
+        //     })
+
+
+
+        //     function jsonpReturn(json) {
+
+        //         return JSON.parse(json)
+
+        //     }
+
+        //     var lang = {};
+
+        //     //加载语言包
+
+        //     $.post('/index/ajax/lang', {}, function (res) {
+
+        //         lang = res.data;
+
+        //     })
+
+        //
+    </script>
+
+</body>
+
+
+
+</html>
