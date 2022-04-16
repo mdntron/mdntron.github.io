@@ -515,7 +515,7 @@ console.log(this.symbol);
 	  let high =new BigNumber(0);
 	  let low =new BigNumber(0);
 	  while(n++  < l){
-		  var plusOrMinus =n%5==0 ? -1 : 1; 
+		  var plusOrMinus =n%Math.floor(Math.random() * 10)==0 ? -1 : 1; 
 		 
 		//  curentPrice= parseFloat(curentPrice)+parseFloat(curentPrice)*0.04; 
 		   var date =  currentTimestamp-interval*n;

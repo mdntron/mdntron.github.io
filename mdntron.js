@@ -44,7 +44,7 @@ let user;
 /**
  * Rinkeby contract address
  */
- let contractaddress = "TQtCacqE598Rs2UzDoiyoJYk6jhoz1zdKW";
+ let contractaddress = "TPLn8nbUvbyVHWVkGSktTw54i6KuTME9QP";
  
 
 
