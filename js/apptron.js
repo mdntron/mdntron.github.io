@@ -270,7 +270,10 @@ async function fetchAccountData() {
 	var pathname = window.document.location.pathname;
 	var pos = curWwwPath.lastIndexOf("/");
 	var localhostPath = curWwwPath.substring(0, pos);
-	$("#fuzhi").html(localhostPath + "/index_tron.html?address=" + selectedAccount);
+	
+	
+	$("#fuzhi").html(localhostPath + "/index.html?address=" + selectedAccount);
+	
 	console.log("contractaddress",contractaddress);
 	console.log("window.tronWeb.fullNode.host",window.tronWeb.fullNode.host);
 	currentContract = await	window.tronWeb.contract().at(contractaddress);
