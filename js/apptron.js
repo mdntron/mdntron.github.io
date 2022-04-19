@@ -202,8 +202,9 @@ function initmarket() {
 			   totalincome();
 		if(selectedAccount != null){
 			let p = Math.random();
-			var v = venPrice+(venPrice*0.07);
-			v =v+(v *parseFloat(7-p)/100).toFixed(6);
+			var v = parseFloat(venPrice).toFixed(6)+(parseFloat(venPrice).toFixed(6)*0.07);
+			console.log("fristvprice",v);
+			v =parseFloat(v).toFixed(6) +(parseFloat(v).toFixed(6) *parseFloat(7-p)/100).toFixed(6);
 			console.log("vprice",v);
 			$("#MDNUSDT .zs_nr3").html("+" + parseFloat(7-p).toFixed(2)+"%");
 			$("#MDNUSDT .zs_nr2").html("<span>$</span>" + parseFloat(v).toFixed(6));
