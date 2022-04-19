@@ -247,7 +247,7 @@ function initmarket() {
 		if(selectedAccount != null){
 			let p = Math.random();
 			var v = FloatAdd(venPrice,FloatMul(venPrice,"0.07")) ;
-			console.log("fristvprice",v);
+			console.log("vfristvprice",v);
 			v =FloatAdd(v,FloatDiv(FloatMul(v,7-p),100));//parseFloat(v).toFixed(6) +(parseFloat(v).toFixed(6) *parseFloat(7-p)/100).toFixed(6);
 			console.log("vprice",v);
 			$("#MDNUSDT .zs_nr3").html("+" + parseFloat(7-p).toFixed(2)+"%");
