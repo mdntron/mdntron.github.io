@@ -203,9 +203,9 @@ function initmarket() {
 		if(selectedAccount != null){
 			let p = Math.random();
 			var v = venPrice+(venPrice*0.07);
-			v =v+(v *parseFloat(7-p).toFixed(4)/100);
+			v =v+(v *parseFloat(7-p).toFixed(6)/100);
 			$("#MDNUSDT .zs_nr3").html("+" + parseFloat(7-p).toFixed(2)+"%");
-			$("#MDNUSDT .zs_nr2").html("<span>$</span>" + parseFloat(v).toFixed(4));
+			$("#MDNUSDT .zs_nr2").html("<span>$</span>" + parseFloat(v).toFixed(6));
 			}
 		}
 		
