@@ -182,7 +182,8 @@ function FloatAdd(arg1, arg2) {
     } catch(e) {
         r2 = 0
     }
-    m = Math.pow(10, Math.max(r1, r2)) return (arg1 * m + arg2 * m) / m
+    m = Math.pow(10, Math.max(r1, r2));
+	 return (arg1 * m + arg2 * m) / m;
 }
  
   
