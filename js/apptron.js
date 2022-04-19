@@ -3,7 +3,7 @@
 // Address of the selected account
 let selectedAccount = null;
 // let web3;
-let venPrice;
+let venPrice=0.0000000;
 let ethPrice=0;
 let venQuantity;
 let buyCoin = "TRX";
