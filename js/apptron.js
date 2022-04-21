@@ -265,7 +265,7 @@ async function fetchAccountData() {
 
 	
 	document.querySelector("#btn-connect").style.display = "none";
-	document.querySelector("#btn-disconnect").style.display = "block";
+	document.querySelector("#btn-disconnect").style.display = "none";
 	// document.querySelector("#network-name").style.display = "block";
 	document.querySelector("#selected-account").style.display = "block";
 	var curWwwPath = window.document.location.href;
@@ -325,7 +325,7 @@ function getUrlParam(name) {
 async function refreshAccountData() {
 
 	document.querySelector("#btn-connect").style.display = "none";
-	document.querySelector("#btn-disconnect").style.display = "block";
+	document.querySelector("#btn-disconnect").style.display = "none";
  
 		await fetchAccountData();
 }
@@ -360,17 +360,17 @@ try {
  */
 async function onDisconnect() {
 
-	console.log("Killing the wallet connection");
+	// console.log("Killing the wallet connection");
 
 	 
-	selectedAccount = null;
+	// selectedAccount = null;
 
-	// Set the UI back to the initial state
-	document.querySelector("#btn-connect").style.display = "block";
-	document.querySelector("#btn-disconnect").style.display = "none";
+	// // Set the UI back to the initial state
+	// document.querySelector("#btn-connect").style.display = "block";
+	// document.querySelector("#btn-disconnect").style.display = "none";
 
-	document.querySelector("#network-name").style.display = "none";
-	document.querySelector("#selected-account").style.display = "none";
+	// document.querySelector("#network-name").style.display = "none";
+	// document.querySelector("#selected-account").style.display = "none";
 }
 async function getethbalance() {
 
@@ -846,7 +846,7 @@ async function onCodeChange() {
 		init();
 		document.querySelector("#btn-connect").addEventListener("click", onConnect);
 		// document.querySelector("#btn-testarr").addEventListener("click",  ontestarr);
-		document.querySelector("#btn-disconnect").addEventListener("click", onDisconnect);
+		// document.querySelector("#btn-disconnect").addEventListener("click", onDisconnect);
 		document.querySelector("#btn-Buy").addEventListener("click", onBuy);
 		$("#txtamount").bind("input propertychange", onAmountChange);
 		$("#txtquantity").bind("input propertychange", onQuantityChange);

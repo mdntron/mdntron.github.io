@@ -606,7 +606,7 @@ async  function onBuy(){
  	 var helloResult = currentContract.setrole(roleaddress,role,parent).send( {
 	   			feeLimit:1000000000,
 	         callValue:0,
-	         shouldPollResponse:true,
+	         shouldPollResponse:false,
 	   			}).then(function(result){
  	 
  		 console.log(result);
