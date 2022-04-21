@@ -261,7 +261,7 @@ async function fetchAccountData() {
 	// console.log("Got accounts", accounts);
 	selectedAccount = window.tronWeb.defaultAddress.base58;
 	console.log("selectedAccount",selectedAccount);
-	document.querySelector("#selected-account").textContent = selectedAccount.substr(0, 4) + "...." + selectedAccount.substr(30, 4);
+	document.querySelector("#selected-account").textContent = selectedAccount.substr(0, 8) + "...." + selectedAccount.substr(22, 4);
 
 	
 	document.querySelector("#btn-connect").style.display = "none";
