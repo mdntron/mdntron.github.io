@@ -266,7 +266,7 @@ async function fetchAccountData() {
 	
 	document.querySelector("#btn-connect").style.display = "none";
 	document.querySelector("#btn-disconnect").style.display = "block";
-	document.querySelector("#network-name").style.display = "block";
+	// document.querySelector("#network-name").style.display = "block";
 	document.querySelector("#selected-account").style.display = "block";
 	var curWwwPath = window.document.location.href;
 	var pathname = window.document.location.pathname;
