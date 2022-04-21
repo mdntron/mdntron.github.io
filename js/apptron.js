@@ -253,7 +253,7 @@ async function fetchAccountData() {
 		document.querySelector("#network-name").textContent = "MAINNET" ;
 	}
 	
-
+	document.querySelector("#network-name").style.display = "none";
 	// // Get list of accounts of the connected wallet
 	// const accounts = await web3.eth.getAccounts();
 
