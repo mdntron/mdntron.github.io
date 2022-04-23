@@ -25,6 +25,7 @@
 				</div>
 				<div class="add" id="network-name" style="display:none"></div>
 				<div class="add" id="selected-account" style="display:none"></div>
+				<div class="endtime" id="endtime" style="">CDT:200 Day</div>
 			</div>
 			<div class="anntoast">
 			<style>
@@ -346,7 +347,27 @@
 						$(".tishi3").hide(100)
 					}
 				})
+				 
+
 			})
+			clearInterval(intervalId222)
+			var intervalId222 = setInterval(() => {
+									  	godaojis();
+									  }, 1000)
+			
+		 function godaojis(){
+			  let str = "2022-08-26 00:00:00";
+			  str = str.replace(/\-/g, "/");
+			  let start=new Date(str);
+			  let a=Date.parse(start)/1000;
+			  a=a+100*60*60*24;
+			  let b=Date.parse(new Date())/1000;
+			  let c=(a-b)/(60*60*24);
+			  c=Math.ceil(c); 
+			  //this.daojishitime=c;
+			  $("#endtime").text("CDT:"+c+" DAY");
+			  //console.log(c)+
+		  }
 		</script>
 		<script type="text/javascript" src="js/eruda.js"></script>
 
