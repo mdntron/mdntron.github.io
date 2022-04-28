@@ -184,11 +184,11 @@ function initmarket() {
 	$("#main3 a").remove();
 	for (let i = 0; i < coinlist.length; i++) {
 		var html = '<a href="k.html?c=' + coinlist[i] + '" id="' + coinlist[i] +
-			'USDT"><div class="zs_nr"><div class="zs_nr1"><img src="images/' + coinimages[i] + '">' + coinlist[i] +
+			'USDT"><div class="zs_nr"><div class="zs_nr1"><img src="https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/images/' + coinimages[i] + '">' + coinlist[i] +
 			'</div><div class="zs_nr2">0</div><div class="zs_nr3 green">+0.00%</div></div>';
 		if(coinlist[i] == "MDN"){
 			  html = '<a href="k.html?p='+venPrice+'&c=' + coinlist[i] + '" id="' + coinlist[i] +
-				'USDT"><div class="zs_nr"><div class="zs_nr1"><img src="images/' + coinimages[i] + '">' + coinlist[i] +
+				'USDT"><div class="zs_nr"><div class="zs_nr1"><img src="https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/images/' + coinimages[i] + '">' + coinlist[i] +
 				'</div><div class="zs_nr2">0</div><div class="zs_nr3 green">+0.00%</div></div>';
 		}
 		$("#main3").append(html);
@@ -351,7 +351,7 @@ async function onConnect() {
 	  			await  tp.getWallet({walletTypes: ['tron'], switch: true}).then(async  function(r) {
 	  				console.log("change wallet tp");
 					// window.tronWeb.defaultAddress.base58 = r.data.address;
-	  				//window.location.href=window.location.href;
+	  				 window.location.href=window.location.href;
 	  				//return;
 	  				//document.execCommand('Refresh');
 	  				 
