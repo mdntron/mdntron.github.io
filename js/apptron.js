@@ -347,9 +347,10 @@ async function onConnect() {
 	  	console.log("tp wallet");
 	  	  await tp.getCurrentWallet().then(async  function(result) {
 	  		console.log("current wallet tp",result.data.blockchain);
-	  		if(result.data.blockchain != 'tron' && result.msg=="success"){
+	  		if(result.data.blockchain != 'tron' ){
 	  			await  tp.getWallet({walletTypes: ['tron'], switch: true}).then(async  function(r) {
 	  				console.log("change wallet tp");
+					tp.close();
 					// window.tronWeb.defaultAddress.base58 = r.data.address;
 	  				 window.location.href=window.location.href;
 	  				//return;
