@@ -165,7 +165,31 @@ let isApprove = false;
  * Setup the orchestra
  */
 async function init() {
+	
+	console.log(tp.isConnected());
+	if(await tp.isConnected()){
+		await tp.getCurrentWallet().then(async function(result) {
+			if(result.data.blockchain != 'tron' && result.msg=="success"){
+				await tp.getWallet({walletTypes: ['tron'], switch: true}).then(async function(result) {
+					await onConnect();
+					return;
+					//document.execCommand('Refresh');
+					 
+				  
+				});
+				
+			}
+		 
+	 
+	
+	});
+		
+	
+		
+	} 
+	
 	await onConnect();
+	
  
 
 }
