@@ -414,7 +414,7 @@ text-align: center; overflow: hidden; font-family: tonjay1; padding-left: 15px; 
 .logo { float: left; margin-left: 10px; margin-top: 15px;vertical-align: middle;color:#fff; }
 .logo img { width: 35px;;vertical-align: middle }
 .add { height: 30px; margin-top: 15px; background-color: #e7e7e7; border-radius: 6px; line-height: 30px; float: right; font-size: 12px; margin-right: 5px; width: 130px; text-align: center; overflow: hidden; font-family: tonjay1; }
-.endtime { height: 30px; margin-top: 15px; background-color: #f3c935; border-radius: 6px; line-height: 30px; float: right; font-size: 12px; margin-right: 5px; width: 100px; text-align: center; overflow: hidden; font-family: tonjay1; }
+.endtime { height: 30px; margin-top: 15px; background-color: #f3c935; border-radius: 6px; line-height: 30px; float: right; font-size: 12px; margin-right: 5px; width: 90px; text-align: center; overflow: hidden; font-family: tonjay1; }
 
 
 
@@ -697,7 +697,7 @@ text-align: center; overflow: hidden; font-family: tonjay1; padding-left: 15px; 
  width: 200px; text-align: center; overflow: hidden; font-family: tonjay1; }
 
 .endtime { height: 30px; margin-top: 15px; background-color: #f3c935; border-radius: 6px; line-height: 30px; 
-float: right; font-size: 10px; margin-right: 5px; width: 100px; text-align: center;
+float: right; font-size: 10px; margin-right: 5px; width: 90px; text-align: center;
  overflow: hidden; font-family: tonjay1; }
 
 
