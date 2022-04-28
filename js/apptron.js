@@ -181,6 +181,10 @@ async function init() {
 				  
 				});
 				
+			}else{
+				console.log("is tron wallet tp");
+				await onConnect();
+				return;
 			}
 		 
 	 
