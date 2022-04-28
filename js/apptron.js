@@ -359,6 +359,7 @@ async function refreshAccountData() {
  * Connect wallet button pressed.
  */
 async function onConnect() {
+	  console.log("  onConnect   ");
 try {
    var obj = setInterval(async ()=>{
               if (window.tronWeb && window.tronWeb.defaultAddress.base58) {
@@ -370,7 +371,9 @@ try {
                   tronWeb = window.tronWeb;
                   await refreshAccountData();
                   console.log(tronWeb);
-              }
+              }else{
+				    console.log("  no window.tronweb   ");
+			  }
           }, 10);
   } catch(e) {
     console.log("Could not get a wallet connection", e);
