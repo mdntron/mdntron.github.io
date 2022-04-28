@@ -16,8 +16,8 @@ let incomes = [];
 let user;
 
 
-let  tronWeb = window.tronWeb;
- console.log("window.tronWeb",window.tronWeb);
+let  tronWeb =null;
+ 
 // // 插件发送代码
 // window.dispatchEvent(new Event('tronLink#initialized'));
 
