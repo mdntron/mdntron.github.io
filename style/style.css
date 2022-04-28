@@ -1,6 +1,6 @@
 html { font-family: tonjay1; }
-@font-face { font-family: tonjay; src: url(https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/style/SourceHanSansCN-Bold_0.otf) }
-@font-face { font-family: tonjay1; src: url(https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/style/SourceHanSansCN-Regular_0.otf) }
+@font-face { font-family: tonjay;   }
+@font-face { font-family: tonjay1;  }
 body { margin: 0px; background-repeat: no-repeat; -webkit-text-size-adjust: 100% !important; text-size-adjust: 100% !important; -moz-text-size-adjust: 100% !important; background-color: #181d43 }
 ul, ol, dl, li, dt, dd, p, h1, h2, h3, h4, h5, h6, form { margin: 0px; padding: 0px; }
 ul { list-style-type: none; }
