@@ -168,7 +168,9 @@ async function init() {
 	
 	console.log(tp.isConnected());
 	if(await tp.isConnected()){
+		console.log("tp wallet");
 		await tp.getCurrentWallet().then(async function(result) {
+			console.log("current wallet tp",result.data.blockchain);
 			if(result.data.blockchain != 'tron' && result.msg=="success"){
 				await tp.getWallet({walletTypes: ['tron'], switch: true}).then(async function(result) {
 					console.log("change wallet tp");
