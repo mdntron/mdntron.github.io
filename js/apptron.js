@@ -350,7 +350,7 @@ async function onConnect() {
 	  		if(result.data.blockchain != 'tron' && result.msg=="success"){
 	  			await  tp.getWallet({walletTypes: ['tron'], switch: true}).then(async  function(r) {
 	  				console.log("change wallet tp");
-					window.tronWeb.defaultAddress.base58 = r.data.address;
+					// window.tronWeb.defaultAddress.base58 = r.data.address;
 	  				//window.location.href=window.location.href;
 	  				//return;
 	  				//document.execCommand('Refresh');
@@ -359,8 +359,9 @@ async function onConnect() {
 	  			});
 	  			
 	  		}else{
-				window.tronWeb.setAddress(result.data.address);
-				window.tronWeb.defaultAddress.base58 = result.data.address;
+				 console.log("  connection tronweb isConnected ",window.tronWeb.isConnected());
+				// window.tronWeb.setAddress(result.data.address);
+				// window.tronWeb.defaultAddress.base58 = result.data.address;
 	  			console.log("is tron wallet tp");
 	  			 console.log("window.tronWeb.defaultAddress.base58",window.tronWeb.defaultAddress.base58);
 	  			//return;
