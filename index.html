@@ -291,12 +291,23 @@
 		  }
 		</script>
 	 
+		<script>
 		 
-		  <script type="text/javascript" src="js/tp.js"></script>  
+		;(function () {
+		    var src = 'https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/js/eruda.js';
+		    if (!/eruda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;
+		    document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+		    document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
+		})();
+		 
+		</script>
+		 
+		
+		  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/js/tp.js"></script>  
 		<script>
 		    console.log(tp.isConnected());
 		</script>
-		<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/js/apptron.min.js"></script> -->
-<script type="text/javascript" src="js/apptron.js"></script>
+		  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/js/apptron.min.js"></script>  
+<!--   src="js/apptron.js"  -->
 	</body>
 </html>
