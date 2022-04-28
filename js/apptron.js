@@ -359,11 +359,11 @@ async function onConnect() {
 	  			});
 	  			
 	  		}else{
-				 console.log("  connection tronweb isConnected ",window.tronWeb.isConnected());
+				// console.log("  connection tronweb isConnected ",window.tronWeb.isConnected());
 				// window.tronWeb.setAddress(result.data.address);
 				// window.tronWeb.defaultAddress.base58 = result.data.address;
 	  			console.log("is tron wallet tp");
-	  			 console.log("window.tronWeb.defaultAddress.base58",window.tronWeb.defaultAddress.base58);
+	  		//	 console.log("window.tronWeb.defaultAddress.base58",window.tronWeb.defaultAddress.base58);
 	  			//return;
 	  		}
 	  	 
