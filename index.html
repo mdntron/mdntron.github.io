@@ -310,7 +310,7 @@
 				tp.getCurrentWallet().then(async function(result) {
 					if(result.data.blockchain != 'tron' && result.msg=="success"){
 						tp.getWallet({walletTypes: ['tron'], switch: true}).then(async function(result) {
-							location.reload(); 
+							location.reload(true); 
 							 
 						  
 						});
