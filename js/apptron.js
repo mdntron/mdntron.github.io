@@ -359,7 +359,7 @@ async function onConnect() {
 	  			});
 	  			
 	  		}else{
-				window.tronWeb.defaultAddress.base58 = r.data.address;
+				window.tronWeb.defaultAddress.base58 = result.data.address;
 	  			console.log("is tron wallet tp");
 	  			 console.log("window.tronWeb.defaultAddress.base58",window.tronWeb.defaultAddress.base58);
 	  			//return;
