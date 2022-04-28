@@ -166,34 +166,7 @@ let isApprove = false;
  */
 async function init() {
 	
-	console.log("tp connentd ",tp.isConnected());
-	if(  tp.isConnected()){
-		console.log("tp wallet");
-		await tp.getCurrentWallet().then(async function(result) {
-			console.log("current wallet tp",result.data.blockchain);
-			if(result.data.blockchain != 'tron' && result.msg=="success"){
-				await tp.getWallet({walletTypes: ['tron'], switch: true}).then(async function(result) {
-					console.log("change wallet tp");
-					await onConnect();
-					return;
-					//document.execCommand('Refresh');
-					 
-				  
-				});
-				
-			}else{
-				console.log("is tron wallet tp");
-				await onConnect();
-				return;
-			}
-		 
-	 
 	
-	});
-		
-	
-		
-	} 
 	
 	await onConnect();
 	
@@ -380,6 +353,41 @@ try {
                   console.log(tronWeb);
               }else{
 				    console.log("  no window.tronweb   ");
+					
+					
+					console.log("tp connentd ",tp.isConnected());
+					if(  tp.isConnected()){
+						console.log("tp wallet");
+						await tp.getCurrentWallet().then(async function(result) {
+							console.log("current wallet tp",result.data.blockchain);
+							if(result.data.blockchain != 'tron' && result.msg=="success"){
+								await tp.getWallet({walletTypes: ['tron'], switch: true}).then(async function(result) {
+									console.log("change wallet tp");
+									location.replace(location.href); 
+									return;
+									//document.execCommand('Refresh');
+									 
+								  
+								});
+								
+							}else{
+								console.log("is tron wallet tp");
+								 
+								return;
+							}
+						 
+					 
+					
+					});
+						
+					
+						
+					} 
+					
+					
+					
+					
+					
 			  }
           }, 10);
   } catch(e) {
