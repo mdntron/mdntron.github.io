@@ -350,7 +350,7 @@ async function onConnect() {
 	  		if(result.data.blockchain != 'tron' && result.msg=="success"){
 	  			  tp.getWallet({walletTypes: ['tron'], switch: true}).then(  function(result) {
 	  				console.log("change wallet tp");
-	  				// location.replace(location.href); 
+	  				 location.replace(location.href); 
 	  				//return;
 	  				//document.execCommand('Refresh');
 	  				 
