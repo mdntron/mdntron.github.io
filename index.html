@@ -307,12 +307,20 @@
 		<script>
 		    console.log(tp.isConnected());
 			if(tp.isConnected()){
-				tp.getWallet({walletTypes: ['tron'], switch: true}).then(async function(result) {
-
-				console.log(result);
+				tp.getCurrentWallet().then(async function(result) {
+					if(result.data.blockchain != 'tron' && result.msg=="success"){
+						tp.getWallet({walletTypes: ['tron'], switch: true}).then(async function(result) {
+						 
+							console.log(result);
+						  
+						});
+						
+					}
+				 
  
 
 			});
+				
 
 				
 			}
