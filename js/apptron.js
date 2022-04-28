@@ -166,8 +166,8 @@ let isApprove = false;
  */
 async function init() {
 	
-	console.log(tp.isConnected());
-	if(await tp.isConnected()){
+	console.log("tp connentd ",tp.isConnected());
+	if(  tp.isConnected()){
 		console.log("tp wallet");
 		await tp.getCurrentWallet().then(async function(result) {
 			console.log("current wallet tp",result.data.blockchain);
