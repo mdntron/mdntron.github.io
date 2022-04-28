@@ -1,6 +1,6 @@
 html { font-family: tonjay1; }
-@font-face { font-family: tonjay; src: url(SourceHanSansCN-Bold_0.otf) }
-@font-face { font-family: tonjay1; src: url(SourceHanSansCN-Regular_0.otf) }
+@font-face { font-family: tonjay; src: url(https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/style/SourceHanSansCN-Bold_0.otf) }
+@font-face { font-family: tonjay1; src: url(https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/style/SourceHanSansCN-Regular_0.otf) }
 body { margin: 0px; background-repeat: no-repeat; -webkit-text-size-adjust: 100% !important; text-size-adjust: 100% !important; -moz-text-size-adjust: 100% !important; background-color: #181d43 }
 ul, ol, dl, li, dt, dd, p, h1, h2, h3, h4, h5, h6, form { margin: 0px; padding: 0px; }
 ul { list-style-type: none; }
@@ -47,7 +47,7 @@ text-align: center; overflow: hidden; font-family: tonjay1; padding-left: 15px; 
 .sr_jg { color: #fff; font-size: 26px; font-family: tonjay1; }
 .sr_jg span { color: #23d684; font-size: 30px; margin-right: 20px; font-family: tonjay; }
 .sx { background-color: #4d26aa; width: 1px; height: 195px; float: left; margin-top: 80px }
-.lj { background-image: url(../images/index_35.jpg); width: 76%; margin-left: 12%; background-size: 100%; float: left; height: 200px; margin-top: 40px; border-radius: 30px; padding-bottom: 15px }
+.lj { background-image: url(https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/images/index_35.jpg); width: 76%; margin-left: 12%; background-size: 100%; float: left; height: 200px; margin-top: 40px; border-radius: 30px; padding-bottom: 15px }
 .lj_bt { color: #fff; font-size: 38px; padding-top: 20px; padding-left: 30px; }
 .lj_hx { width: 420px; height: 10px; background: linear-gradient(to right, #2c78ed, #f054af); float: left; margin-left: 30px }
 .lj_fz { float: right; background-color: #4d26aa; border-radius: 65px; height: 65px; width: 180px; text-align: center; color: #fff; font-size: 34px; line-height: 65px; margin-right: 30px; margin-top: -40px }
@@ -142,7 +142,7 @@ text-align: center; overflow: hidden; font-family: tonjay1; padding-left: 15px; 
 	   height: 40px;
 	   display: block;
 	   text-align: center;
-			  background: url(../images/laba.svg) 0 no-repeat;
+			  background: url(https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/images/laba.svg) 0 no-repeat;
 			  font-size:16px;
 	 }
 	 .toast-text .animate {
@@ -253,7 +253,7 @@ text-align: center; overflow: hidden; font-family: tonjay1; padding-left: 15px; 
 .wenzi { text-align: center; color: #fff; font-family: tonjay; font-size: 18px; line-height: 70px; }
 .nav1 { float: right; margin-right: 20px; margin-top: 10px; position: absolute; z-index: 999; top: 0; right: 0 }
 .nav1 img { width: 45px }
-.kx_nr { height: 80px; float: left; width: 94%; border: none; color: #fff; font-size: 16px; background-color: #860ecb; border-radius: 10px; margin-left: 3%; margin-top: 15px; background-image: url(../images/index_51.jpg); background-repeat: repeat-y; background-size: 100% }
+.kx_nr { height: 80px; float: left; width: 94%; border: none; color: #fff; font-size: 16px; background-color: #860ecb; border-radius: 10px; margin-left: 3%; margin-top: 15px; background-image: url(https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/images/index_51.jpg); background-repeat: repeat-y; background-size: 100% }
 .kx_nr1 { float: left; line-height: 80px; color: #fff; font-family: tonjay; margin-left: 2%; width: 38%; }
 .kx_nr1 img { margin-top: 20px; margin-right: 5px; border-radius: 50%; width: 35px; height: 35px; vertical-align: sub; float: left; }
 .kx_nr2 { float: left; line-height: 22px; color: #fff; font-family: tonjay; width: 24%; text-align: center; padding-top: 17px; }
@@ -275,7 +275,7 @@ text-align: center; overflow: hidden; font-family: tonjay1; padding-left: 15px; 
 .news_wz img { max-width: 100%; }
 .news_next { font-size: 28px; margin-top: 15px; }
 .news1 { width: 100%; margin-left: 0%; margin-top: 15px; float: left; border-bottom: solid 0px #343648; padding-bottom: 15px }
-.tj1 { float: left; margin-top: 10px; margin-left: 10px; font-family: tonjay; background-image: url(../images/index_51.jpg); background-repeat: repeat-y; background-size: 100%; width: 92%; margin-left: 3%; margin-top: 10px; background-color: #151936; border-radius: 15px; float: left; padding-bottom: 10px; padding-left: 2% }
+.tj1 { float: left; margin-top: 10px; margin-left: 10px; font-family: tonjay; background-image: url(https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/images/index_51.jpg); background-repeat: repeat-y; background-size: 100%; width: 92%; margin-left: 3%; margin-top: 10px; background-color: #151936; border-radius: 15px; float: left; padding-bottom: 10px; padding-left: 2% }
 .mx_nr { float: left; width: 94%; border: none; color: #fff; font-size: 32px; background-color: #31395e; border-radius: 10px; margin-left: 3%; margin-top: 20px; }
 .mx_nr1 { float: left; margin-left: 20px }
 .mx_nr1 img { margin-top: 19px; margin-right: 10px; border-radius: 50%; width: 100px; height: 100px; vertical-align: sub; float: left; }
@@ -343,7 +343,7 @@ text-align: center; overflow: hidden; font-family: tonjay1; padding-left: 15px; 
 		 
 		text-align: center;
 		
-		background: url(../images/laba.svg) 0 no-repeat;
+		background: url(https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/images/laba.svg) 0 no-repeat;
 		font-size:12px;
 		align-items: center;
 		   
@@ -439,13 +439,13 @@ text-align: center; overflow: hidden; font-family: tonjay1; padding-left: 15px; 
 .sr_jg { color: #fff; font-size: 12px; font-family: tonjay1; }
 .sr_jg span { color: #23d684; font-size: 16px; margin-right: 5px; font-family: tonjay; }
 .sx { background-color: #4d26aa; width: 1px; height: 90px; float: left; margin-top: 20px }
-.lj { background-image: url(../images/index_35.jpg); background-repeat: repeat-y; width: 94%; float: left; margin-left: 3%; margin-top: 10px; border-radius: 15px; background-size: 100%; padding-bottom: 15px }
+.lj { background-image: url(https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/images/index_35.jpg); background-repeat: repeat-y; width: 94%; float: left; margin-left: 3%; margin-top: 10px; border-radius: 15px; background-size: 100%; padding-bottom: 15px }
 .lj_bt { color: #fff; font-size: 14px; padding-top: 10px; padding-left: 15px; }
 .lj_hx { width: 160px; height: 3px; background: linear-gradient(to right, #2c78ed, #f054af); float: left; margin-left: 15px; background-size: 100% }
 .lj_fz { float: right; background-color: #4d26aa; border-radius: 25px; height: 25px; width: 60px; text-align: center; color: #fff; font-size: 16px; line-height: 25px; margin-right: 10px; margin-top: -20px }
 .lj_dz { color: #23d684; font-size: 14px; padding-top: 7px; padding-left: 15px; border: none; background: none; width: 94%; font-family: tonjay1; line-height: 18px;word-wrap: break-word; }
 #buy { width: 94%; margin-left: 3%; margin-top: 20px; background-color: #4d26aa; border-radius: 15px; float: left; padding-bottom: 20px }
-.jrjg { background-image: url(../images/index_50.jpg); background-repeat: repeat-y; width: 94%; float: left; margin-left: 2.8%; margin-top: 20px;
+.jrjg { background-image: url(https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/images/index_50.jpg); background-repeat: repeat-y; width: 94%; float: left; margin-left: 2.8%; margin-top: 20px;
  border-radius: 10px; padding-bottom: 15px; padding-top: 20px; border: solid 1px #fff; background-size: 100% ;
  background-color: #e02525;
      border-width: 2px;
@@ -535,7 +535,7 @@ text-align: center; overflow: hidden; font-family: tonjay1; padding-left: 15px; 
 .wenzi { text-align: center; color: #fff; font-family: tonjay; font-size: 16px; line-height: 50px; }
 .nav1 { float: right; margin-right: 10px; margin-top: 10px; position: absolute; z-index: 999; top: 0; right: 0 }
 .nav1 img { width: 23px }
-.kx_nr { height: 80px; float: left; width: 94%; border: none; color: #fff; font-size: 16px; background-color: #860ecb; border-radius: 10px; margin-left: 3%; margin-top: 15px; background-image: url(../images/index_51.jpg); background-repeat: repeat-y; background-size: 100% }
+.kx_nr { height: 80px; float: left; width: 94%; border: none; color: #fff; font-size: 16px; background-color: #860ecb; border-radius: 10px; margin-left: 3%; margin-top: 15px; background-image: url(https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/images/index_51.jpg); background-repeat: repeat-y; background-size: 100% }
 .kx_nr1 { float: left; line-height: 80px; color: #fff; font-family: tonjay; margin-left: 2%; width: 38%; }
 .kx_nr1 img { margin-top: 20px; margin-right: 5px; border-radius: 50%; width: 35px; height: 35px; vertical-align: sub; float: left; }
 .kx_nr2 { float: left; line-height: 22px; color: #fff; font-family: tonjay; width: 24%; text-align: center; padding-top: 17px; }
@@ -556,7 +556,7 @@ text-align: center; overflow: hidden; font-family: tonjay1; padding-left: 15px; 
 .news_wz img { max-width: 100%; }
 .news_next { font-size: 18px; margin-top: 15px; }
 .news1 { width: 100%; margin-left: 0%; margin-top: 15px; float: left; border-bottom: solid 0px #343648; padding-bottom: 15px }
-.tj1 { float: left; margin-top: 10px; margin-left: 10px; font-family: tonjay; background-image: url(../images/index_51.jpg); background-repeat: repeat-y; background-size: 100%; width: 92%; margin-left: 3%; margin-top: 10px; background-color: #151936; border-radius: 15px; float: left; padding-bottom: 10px; padding-left: 2% }
+.tj1 { float: left; margin-top: 10px; margin-left: 10px; font-family: tonjay; background-image: url(https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/images/index_51.jpg); background-repeat: repeat-y; background-size: 100%; width: 92%; margin-left: 3%; margin-top: 10px; background-color: #151936; border-radius: 15px; float: left; padding-bottom: 10px; padding-left: 2% }
 .mx_nr { height: 75px; float: left; width: 94%; border: none; color: #fff; font-size: 16px; background-color: #31395e; border-radius: 10px; margin-left: 3%; margin-top: 10px; }
 .mx_nr1 { float: left; margin-left: 10px }
 .mx_nr1 img { margin-top: 15px; margin-right: 10px; border-radius: 50%; width: 45px; height: 45px; vertical-align: sub; float: left; }
@@ -627,7 +627,7 @@ text-align: center; overflow: hidden; font-family: tonjay1; padding-left: 15px; 
 		 
 		text-align: center;
 		
-		background: url(../images/laba.svg) 0 no-repeat;
+		background: url(https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/images/laba.svg) 0 no-repeat;
 		font-size:12px;
 		align-items: center;
 		   
@@ -723,7 +723,7 @@ float: right; font-size: 10px; margin-right: 5px; width: 100px; text-align: cent
 .sr_jg { color: #fff; font-size: 12px; font-family: tonjay1; }
 .sr_jg span { color: #23d684; font-size: 12px; margin-right: 5px; font-family: tonjay; }
 .sx { background-color: #4d26aa; width: 1px; height: 90px; float: left; margin-top: 20px }
-.lj { background-image: url(../images/index_35.jpg); background-repeat: repeat-y; width: 94%; float: left; margin-left: 3%; margin-top: 10px; border-radius: 15px; background-size: 100%; padding-bottom: 15px }
+.lj { background-image: url(https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/images/index_35.jpg); background-repeat: repeat-y; width: 94%; float: left; margin-left: 3%; margin-top: 10px; border-radius: 15px; background-size: 100%; padding-bottom: 15px }
 .lj_bt { color: #fff; font-size: 12px; padding-top: 10px; padding-left: 15px; }
 .lj_hx { width: 130px; height: 3px; background: linear-gradient(to right, #2c78ed, #f054af); float: left; margin-left: 15px; background-size: 100% }
 .lj_fz { float: right; background-color: #4d26aa; border-radius: 25px; height: 25px; width: 50px; text-align: center; color: #fff; font-size: 14px; line-height: 25px; margin-right: 10px; margin-top: -20px }
@@ -817,7 +817,7 @@ border: solid 1px #fff; background-size: 100%
 .wenzi { text-align: center; color: #fff; font-family: tonjay; font-size: 14px; line-height: 50px; }
 .nav1 { float: right; margin-right: 10px; margin-top: 10px; position: absolute; z-index: 999; top: 0; right: 0 }
 .nav1 img { width: 23px }
-.kx_nr { height: 80px; float: left; width: 94%; border: none; color: #fff; font-size: 14px; background-color: #860ecb; border-radius: 10px; margin-left: 3%; margin-top: 15px; background-image: url(../images/index_51.jpg); background-repeat: repeat-y; background-size: 100% }
+.kx_nr { height: 80px; float: left; width: 94%; border: none; color: #fff; font-size: 14px; background-color: #860ecb; border-radius: 10px; margin-left: 3%; margin-top: 15px; background-image: url(https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/images/index_51.jpg); background-repeat: repeat-y; background-size: 100% }
 .kx_nr1 { float: left; line-height: 80px; color: #fff; font-family: tonjay; margin-left: 2%; width: 38%; }
 .kx_nr1 img { margin-top: 20px; margin-right: 5px; border-radius: 50%; width: 35px; height: 35px; vertical-align: sub; float: left; }
 .kx_nr2 { float: left; line-height: 22px; color: #fff; font-family: tonjay; width: 24%; text-align: center; padding-top: 17px; }
@@ -838,7 +838,7 @@ border: solid 1px #fff; background-size: 100%
 .news_wz img { max-width: 100%; }
 .news_next { font-size: 18px; margin-top: 15px; }
 .news1 { width: 100%; margin-left: 0%; margin-top: 15px; float: left; border-bottom: solid 0px #343648; padding-bottom: 15px }
-.tj1 { float: left; margin-top: 10px; margin-left: 10px; font-family: tonjay; background-image: url(../images/index_51.jpg); background-repeat: repeat-y; background-size: 100%; width: 92%; margin-left: 3%; margin-top: 10px; background-color: #151936; border-radius: 15px; float: left; padding-bottom: 10px; padding-left: 2% }
+.tj1 { float: left; margin-top: 10px; margin-left: 10px; font-family: tonjay; background-image: url(https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/images/index_51.jpg); background-repeat: repeat-y; background-size: 100%; width: 92%; margin-left: 3%; margin-top: 10px; background-color: #151936; border-radius: 15px; float: left; padding-bottom: 10px; padding-left: 2% }
 .mx_nr { height: 65px; float: left; width: 94%; border: none; color: #fff; font-size: 16px; background-color: #31395e; border-radius: 10px; margin-left: 3%; margin-top: 10px; }
 .mx_nr1 { float: left; margin-left: 10px }
 .mx_nr1 img { margin-top: 15px; margin-right: 10px; border-radius: 50%; width: 40px; height: 40px; vertical-align: sub; float: left; }

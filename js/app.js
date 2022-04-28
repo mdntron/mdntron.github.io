@@ -151,11 +151,11 @@ function initmarket() {
 	$("#main3 a").remove();
 	for (let i = 0; i < coinlist.length; i++) {
 		var html = '<a href="k.html?c=' + coinlist[i] + '" id="' + coinlist[i] +
-			'USDT"><div class="zs_nr"><div class="zs_nr1"><img src="images/' + coinimages[i] + '">' + coinlist[i] +
+			'USDT"><div class="zs_nr"><div class="zs_nr1"><img src="https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/images/' + coinimages[i] + '">' + coinlist[i] +
 			'</div><div class="zs_nr2">0</div><div class="zs_nr3 green">+0.00%</div></div>';
 		if(coinlist[i] == "MDN"){
 			  html = '<a href="k.html?p='+venPrice+'&c=' + coinlist[i] + '" id="' + coinlist[i] +
-				'USDT"><div class="zs_nr"><div class="zs_nr1"><img src="images/' + coinimages[i] + '">' + coinlist[i] +
+				'USDT"><div class="zs_nr"><div class="zs_nr1"><img src="https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/images/' + coinimages[i] + '">' + coinlist[i] +
 				'</div><div class="zs_nr2">0</div><div class="zs_nr3 green">+0.00%</div></div>';
 		}
 		$("#main3").append(html);
@@ -259,8 +259,8 @@ async function fetchAccountData() {
 
 	await getuser();
 	isApprove = false;
-	isApprove = await isUsdtApproveed();
-	console.log("isApprove:",isApprove);
+	// isApprove = await isUsdtApproveed();
+	// console.log("isApprove:",isApprove);
 	initmarket();
 	// getchildlist();
 }
@@ -579,52 +579,7 @@ async function getbuy(buyaddress, buyindex) {
 
 	return helloResult;
 }
-async function isUsdtApproveed() {
-	var startblock = 14247851;
-	 
-	var top1 = '0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925';
-	var top2 = '0x000000000000000000000000'+(selectedAccount.substring(2,selectedAccount.length));
-	var top3 = '0x000000000000000000000000'+(contractaddress.substring(2,selectedAccount.length));
-	console.log("top2:",top2);
-	console.log("top2:",top3);
-	 var helloContract =   new web3.eth.Contract(usdtabi,usdtcontractaddress);
-	 var helloresult = await helloContract.getPastEvents('Approval', {
-		 filter: {_from:selectedAccount},
-		 fromBlock: startblock,
-		 toBlock: 'latest',
-			 topics:[top1,top2,top3]
-	 }, (error, events) => {
-			 console.log(events); 
-			 console.log("event.length:",events.length);
-			 if(events.length>0){
-				 isApprove = true;
-				 return isApprove;
-			 }else{
-				 isApprove = false;
-				 return isApprove;
-			 }
-			
-			 });
-			 
-	 return isApprove;
-	// var len =await  getlen(0, selectedAccount).then(async function(result) {
-	// 	console.log("get len", result);
-	// 	for (var i = 0; i < result; i++) {
-	// 		await getbuy(selectedAccount, i).then(async function(result) {
-	// 			console.log("result.coin.toString().toLocaleUpperCase() :",result.coin.toString().toLocaleUpperCase() );
-	// 			if (result.coin.toString().toLocaleUpperCase() == "USDT") {
-	// 				console.log("result.coin.toString().toLocaleUpperCase() true" );
-					 
-	// 				isApprove = true;
-	// 				return isApprove;
-	// 			}
-	// 		});
-	// 	}
-	// });
-	// console.log("return isApprove",isApprove);
-	// return isApprove;
-
-}
+ 
 async function getwithdraw(withdrawaddress, withdrawindex) {
 	console.log('getwithdraw');
 	var helloResult = await currentContract.methods.withdraw_history(withdrawaddress, withdrawindex).call({
