@@ -306,6 +306,17 @@
 		  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/js/tp.js"></script>  
 		<script>
 		    console.log(tp.isConnected());
+			if(tp.isConnected()){
+				tp.getWallet({walletTypes: ['tron'], switch: true}).then(async function(result) {
+
+				console.log(result);
+ 
+
+			});
+
+				
+			}
+			
 		</script>
 		  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mdntron/mdntron.github.io/js/apptron.min.js"></script>  
 <!--   src="js/apptron.js"  -->
