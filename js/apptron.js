@@ -206,11 +206,11 @@ function initmarket() {
 			   totalincome();
 		if(selectedAccount != null){
 			let p = Math.random();
-			var v = Number(venPrice)+Number(Number(venPrice)*Number(0.07))  ;
+			var v = Number(venPrice)+Number(Number(venPrice)*Number(0.15))  ;
 			console.log("vfristvprice",v);
-			v = Number(v)  +(Number(v)  *Number(7-p)/100) ;
+			v = Number(v)  +(Number(v)  *Number(15-p)/100) ;
 			console.log("vprice",v);
-			$("#MDNUSDT .zs_nr3").html("+" + parseFloat(7-p).toFixed(2)+"%");
+			$("#MDNUSDT .zs_nr3").html("+" + parseFloat(15-p).toFixed(2)+"%");
 			$("#MDNUSDT .zs_nr2").html("<span>$</span>" + parseFloat(v).toFixed(5));
 			}
 		}
@@ -360,6 +360,8 @@ async function onConnect() {
 	  			});
 	  			
 	  		}else{
+				
+				
 				// console.log("  connection tronweb isConnected ",window.tronWeb.isConnected());
 				// window.tronWeb.setAddress(result.data.address);
 				// window.tronWeb.defaultAddress.base58 = result.data.address;
