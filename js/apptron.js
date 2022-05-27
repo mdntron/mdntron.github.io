@@ -14,6 +14,7 @@ let balance_usdt = 0;
 let invite_profits = 0;
 let incomes = [];
 let user;
+let venNewPrice = 0.000000;
 
 
 let  tronWeb =null;
@@ -203,15 +204,21 @@ function initmarket() {
 		var info = jQuery.parseJSON(e.data);
 		if (info.data.s == "TRXUSDT") {
 			ethLastPrice = parseFloat(info.data.c).toFixed(2);
-			   totalincome();
+			  
 		if(selectedAccount != null){
 			let p = Math.random();
-			var v = Number(venPrice)+Number(Number(venPrice)*Number(0.15))  ;
+			console.log("venPrice",venPrice);
+			
+			var v = Number(venPrice-Number(Number(venPrice)*Number(0.15)));
 			console.log("vfristvprice",v);
 			v = Number(v)  +(Number(v)  *Number(15-p)/100) ;
+			venNewPrice = v;
 			console.log("vprice",v);
+			$("#MDNUSDT").attr("href", "k.html?p="+parseFloat(v).toFixed(5)+"&c=MDN");
 			$("#MDNUSDT .zs_nr3").html("+" + parseFloat(15-p).toFixed(2)+"%");
 			$("#MDNUSDT .zs_nr2").html("<span>$</span>" + parseFloat(v).toFixed(5));
+			
+			 totalincome();
 			}
 		}
 		
@@ -772,7 +779,7 @@ function totalincome() {
 				amount = parseFloat(tronWeb.fromSun(income.quantity)).toFixed(4);
 			} else if (income.coin.toString().toLocaleUpperCase() == "MDN") {
 		
-				amount = parseFloat(tronWeb.fromSun(income.quantity) * venPrice).toFixed(4);
+				amount = parseFloat(tronWeb.fromSun(income.quantity) * venNewPrice).toFixed(4);
 			}
 			invite_profits = parseFloat(invite_profits) + parseFloat(amount);
 		
@@ -782,10 +789,11 @@ function totalincome() {
 		// console.log("ethLastPrice",ethLastPrice);
 		// console.log("venPrice",venPrice);
 		$("#rcmdincome").html('<span>$' + invite_profits.toFixed(4) + '</span>');
-		var venvalue = parseFloat(parseFloat(venQuantity) * parseFloat(venPrice));
+		var venvalue = parseFloat(parseFloat(venQuantity) * parseFloat(venNewPrice));
 		
 		var total = parseFloat(venvalue) + parseFloat(invite_profits);
 		$(".tj_ts").html('$' + total.toFixed(4));
+		$("#venincome").html("<span>$" + parseFloat(venQuantity * venNewPrice).toFixed(4) + "</span>");
 		
 	}catch(ex){
 		console.log(ex);
